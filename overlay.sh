@@ -17,12 +17,13 @@ save=$1
 if [[ $1 -eq '-b' ]]; then
   build=true
   save=$2
-  if [[ $# -ne 2 ]]; then
-    echo "ERROR: Must specify the [WORLD-SAVE]."
-    echo
-    usage
-    exit 2
-  fi
+fi
+
+if [[ -z $save ]]; then
+  echo "ERROR: Must specify the [WORLD-SAVE]."
+  echo
+  usage
+  exit 2
 fi
 
 MC_DIR=~/.minecraft

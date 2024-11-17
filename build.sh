@@ -28,7 +28,7 @@ combine() {
     popd
     exit 2
   fi
-  mv "./$output" "$SCRIPT_DIR/out/"
+  mv "./$output" "$OUT_DIR/"
   popd
 }
 
