@@ -136,7 +136,7 @@ substitute_refs pack_data components_music_disc_strad
 substitute_refs pack_data components_music_disc_wait
 substitute_refs pack_data components_music_disc_ward
 substitute_refs pack_data components_poisonous_potato
-# substitute_refs pack_data components_totem_of_undying
+substitute_refs pack_data components_totem_of_undying
 check_output pack_data
 combine pack_data isomorphic_data.zip
 check_output pack_resc
