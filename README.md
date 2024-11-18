@@ -1,8 +1,13 @@
 # Isomorphic
+## Description
 This is a minecraft datapack library, which aims to persist 1 to 1 behaviours with the base game, whilst reducing the `minecraft` item namespace to permit usage of those names by datapack developers.
 
-## List of freed names
-As of our release 1.21.3_0, there are 18 item names available for use:
+## Reasoning
+
+
+## Available Namespace
+As of our release 1.21.3_0, there are 21 item names available for use:
+- `minecraft:diamond_horse_armor`
 - `minecraft:music_disc_11`
 - `minecraft:music_disc_13`
 - `minecraft:music_disc_blocks`
@@ -21,4 +26,10 @@ As of our release 1.21.3_0, there are 18 item names available for use:
 - `minecraft:music_disc_strad`
 - `minecraft:music_disc_wait`
 - `minecraft:music_disc_ward`
+- `minecraft:poisonous_potato`
+- `minecraft:totem_of_undying`
 
+## FAQ
+### "I need more custom items! Please add more!"
+This datapack is maximalist, meaning we attempt to free up as much of the namespace as possible, within the bounds of maintaining vanilla behaviours. However, I do post suggestions for Mojang to enable more items:
+- https://feedback.minecraft.net/hc/en-us/community/posts/31965845874445-Data-Driven-Goat-Horn-Ram-Loot

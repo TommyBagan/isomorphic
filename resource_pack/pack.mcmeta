@@ -1,6 +1,0 @@
-{
-  "pack": {
-    "pack_format": 42,
-    "description": "Library for datapack creators that maintains vanilla behaviours, but permits enhanced datapack usage."
-  }
-}

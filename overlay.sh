@@ -1,11 +1,16 @@
 #!/bin/bash
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+OUT_DIR=$SCRIPT_DIR/build
 
 usage() {
   echo "usage: overlay.sh [OPTION] [WORLD-SAVE]"
   echo "Overlays the datapack and resource pack into Minecraft [WORLD-SAVE]."
+  echo
+  echo "  -b             Builds before overlaying."
+  echo "  -w             Runs assuming a Windows Minecraft install."
 }
 
-if [[ $# -eq 0 ]] || [[ $# -ge 3 ]]; then
+if [[ $# -eq 0 ]] || [[ $# -ge 4 ]]; then
   echo "ERROR: Unexpected number of arguments"
   echo
   usage
@@ -13,10 +18,14 @@ if [[ $# -eq 0 ]] || [[ $# -ge 3 ]]; then
 fi
 
 build=false
-save=$1
-if [[ $1 -eq '-b' ]]; then
+save=${@: -1}
+if [[ "$*" == *"-b"* ]] then
   build=true
-  save=$2
+fi
+
+export MC_DIR=~/.minecraft
+if [[ "$*" == *"-w"* ]]; then
+  export MC_DIR=$APPDATA/.minecraft
 fi
 
 if [[ -z $save ]]; then
@@ -26,8 +35,6 @@ if [[ -z $save ]]; then
   exit 2
 fi
 
-MC_DIR=~/.minecraft
-
 if [[ ! -d "$MC_DIR/saves/$save" ]]; then
   echo "ERROR: Found no Minecraft world save $save."
   echo
@@ -35,7 +42,6 @@ if [[ ! -d "$MC_DIR/saves/$save" ]]; then
   exit 3
 fi
 
-SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 if [[ $build = true ]]; then
   $SCRIPT_DIR/build.sh
   if [[ $? -ne 0 ]]; then
@@ -45,8 +51,6 @@ if [[ $build = true ]]; then
     exit 4
   fi
 fi
-
-OUT_DIR=$SCRIPT_DIR/out
 
 if [[ ! -f "$OUT_DIR/isomorphic_data.zip" ]] || [[ ! -f "$OUT_DIR/isomorphic_resc.zip" ]]; then
   echo "ERROR: Couldn't find both build output zips under $OUT_DIR."
