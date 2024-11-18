@@ -5,7 +5,7 @@
   "minecraft:enchantments": {
     "levels": {}
   },
-  "minecraft:item_model": "minecraft:music_disc_mellohi",
+  "minecraft:item_model": "isomorphic:music_disc_mellohi",
   "minecraft:custom_data": {
     "actual_id": "music_disc_mellohi"
   },
