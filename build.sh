@@ -115,7 +115,7 @@ fi
 
 copy_target pack_data
 copy_target pack_resc
-# substitute_refs pack_data components_diamond_horse_armor
+substitute_refs pack_data components_diamond_horse_armor
 # substitute_refs pack_data components_goat_horn
 substitute_refs pack_data components_music_disc_11
 substitute_refs pack_data components_music_disc_13

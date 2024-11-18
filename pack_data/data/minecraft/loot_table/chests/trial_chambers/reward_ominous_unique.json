@@ -25,6 +25,7 @@
             {
               "function": "set_components",
               "components": @components_music_disc_creator
+            }
           ],
           "name": "minecraft:music_disc_5"
         },

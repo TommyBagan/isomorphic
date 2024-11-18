@@ -6,11 +6,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:ender_pearl",
-          "weight": 10
-        },
-        {
-          "type": "minecraft:item",
           "functions": [
             {
               "add": false,
@@ -55,22 +50,6 @@
             }
           ],
           "name": "minecraft:gold_ingot",
-          "weight": 5
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 4.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "minecraft:redstone",
           "weight": 5
         },
         {
@@ -137,11 +116,40 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:golden_apple"
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 7.0,
+                "min": 3.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:obsidian",
+          "weight": 5
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:saddle"
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 7.0,
+                "min": 3.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:oak_sapling",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:saddle",
+          "weight": 3
         },
         {
           "type": "minecraft:item",
@@ -160,49 +168,14 @@
               "components": @components_diamond_horse_armor
             }
           ]
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "set_components",
-              "components": @components_music_disc_otherside
-            }
-          ],
-          "name": "minecraft:music_disc_5"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": 30.0,
-              "options": "#minecraft:on_random_loot"
-            }
-          ],
-          "name": "minecraft:book"
         }
       ],
       "rolls": {
         "type": "minecraft:uniform",
-        "max": 3.0,
-        "min": 2.0
+        "max": 8.0,
+        "min": 3.0
       }
-    },
-    {
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:empty",
-          "weight": 9
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:eye_armor_trim_smithing_template"
-        }
-      ],
-      "rolls": 1.0
     }
   ],
-  "random_sequence": "minecraft:chests/stronghold_corridor"
+  "random_sequence": "minecraft:chests/village/village_weaponsmith"
 }

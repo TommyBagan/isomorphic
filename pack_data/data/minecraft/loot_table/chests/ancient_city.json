@@ -108,12 +108,16 @@
           "type": "minecraft:item",
           "functions": [
             {
+              "function": "set_components",
+              "components": @components_diamond_horse_armor
+            },
+            {
               "add": false,
               "count": 1.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:diamond_horse_armor",
+          "name": "minecraft:music_disc_5",
           "weight": 2
         },
         {
