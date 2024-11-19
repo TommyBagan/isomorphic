@@ -9,9 +9,9 @@
   "minecraft:custom_data": {
     "actual_id": "music_disc_chirp"
   },
-  "minecraft:item_name": "{\"translate\":\"item.minecraft.music_disc_chirp\"}",
+  "minecraft:item_name": "{\"translate\":\"item.isomorphic.music_disc_chirp\"}",
   "minecraft:jukebox_playable": {
-    "song": "minecraft:chirp"
+    "song": "isomorphic:chirp"
   },
   "minecraft:lore": [],
   "minecraft:max_stack_size": 1,

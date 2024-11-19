@@ -9,9 +9,9 @@
   "minecraft:custom_data": {
     "actual_id": "music_disc_wait"
   },
-  "minecraft:item_name": "{\"translate\":\"item.minecraft.music_disc_wait\"}",
+  "minecraft:item_name": "{\"translate\":\"item.isomorphic.music_disc_wait\"}",
   "minecraft:jukebox_playable": {
-    "song": "minecraft:wait"
+    "song": "isomorphic:wait"
   },
   "minecraft:lore": [],
   "minecraft:max_stack_size": 1,

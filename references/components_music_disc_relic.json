@@ -9,9 +9,9 @@
   "minecraft:custom_data": {
     "actual_id": "music_disc_relic"
   },
-  "minecraft:item_name": "{\"translate\":\"item.minecraft.music_disc_relic\"}",
+  "minecraft:item_name": "{\"translate\":\"item.isomorphic.music_disc_relic\"}",
   "minecraft:jukebox_playable": {
-    "song": "minecraft:relic"
+    "song": "isomorphic:relic"
   },
   "minecraft:lore": [],
   "minecraft:max_stack_size": 1,

@@ -9,9 +9,9 @@
   "minecraft:custom_data": {
     "actual_id": "music_disc_pigstep"
   },
-  "minecraft:item_name": "{\"translate\":\"item.minecraft.music_disc_pigstep\"}",
+  "minecraft:item_name": "{\"translate\":\"item.isomorphic.music_disc_pigstep\"}",
   "minecraft:jukebox_playable": {
-    "song": "minecraft:pigstep"
+    "song": "isomorphic:pigstep"
   },
   "minecraft:lore": [],
   "minecraft:max_stack_size": 1,
