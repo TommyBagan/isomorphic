@@ -6,6 +6,12 @@ This is a Minecraft datapack & resource pack library, which aims to persist curr
 ### Datapack developers can use the item names for custom crafting recipes.
 Mojang have yet to enhance the game so recipes can match against a item-component predicate, or introduce completely data-driven items. Until that is done, it is difficult to have a custom item used as a recipe ingredient, without removing a pre-existing item. However with Isomorphic, datapack developers can freely use any of the freed `minecraft:...` item ids for their own custom items, and use those items as recipe ingredients without concern.
 
+*Here's an example, you can see the item is the Cat Music Disc and behaves as so, but is actually the base item minecraft:music_disc_5 under the hood.*
+
+![image](https://github.com/user-attachments/assets/90a63b52-b609-4ac3-89c4-938908657cc5)
+
+
+
 ### Hidden from players.
 Survival players shouldn't even notice any change to their game whatsoever. Isomorphic does not remove features, but have reworked minecraft's datapacks in our favour.
 
