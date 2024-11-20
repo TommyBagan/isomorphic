@@ -9,7 +9,7 @@ Simply take the Isomorphic zip, and put one copy in your world's datapack folder
 ### Datapack developers can use the item names for custom crafting recipes.
 Mojang have yet to enhance the game so recipes can match against a item-component predicate, or introduce completely data-driven items. Until that is done, it is difficult to have a custom item used as a recipe ingredient, without removing a pre-existing item. However with Isomorphic, datapack developers can freely use any of the freed `minecraft:...` item ids for their own custom items, and use those items as recipe ingredients without concern.
 
-*Here's an example, you can see the item is the Cat Music Disc and behaves as so, but is actually the base item minecraft:music_disc_5 under the hood.*
+*Here's an example, you can see the item is the Cat Music Disc and behaves as so, but is actually the base item minecraft:music_disc_5 under the hood:*
 
 ![image](https://github.com/user-attachments/assets/90a63b52-b609-4ac3-89c4-938908657cc5)
 
@@ -32,8 +32,8 @@ Each item listed in the freed namespace has a custom model. This was made so tha
 Most datapacks that implement custom items don't have creative mode in mind anyway, so this is not really a limitation but still worth mentioning.s
 
 ## Freed Namespace
-As of our release 1.21.3_0, there are 21 item IDs available for use:
-- `minecraft:diamond_horse_armor`(\*1)
+As of our release 1.21.3_0, there are 21** item IDs available for use:
+- `minecraft:diamond_horse_armor`*
 - `minecraft:music_disc_11`
 - `minecraft:music_disc_13`
 - `minecraft:music_disc_blocks`
@@ -55,7 +55,13 @@ As of our release 1.21.3_0, there are 21 item IDs available for use:
 - `minecraft:poisonous_potato`
 - `minecraft:totem_of_undying`
 
-(\*1) There is a known issue with the vanilla default `minecraft:diamond_horse_armor` lore appearing in the recipe book.  
+*  These items must be obtained via using the corresponding extension datapack.
+** Including the extension datapack(s).
+   
+*Here is a picture of all 20 freed item ids:*
+
+![image](https://github.com/user-attachments/assets/6d9aed96-b2a8-4791-b73b-2b53ed3594f2)
+
 
 ## FAQ
 ### "I need more custom items! Please add more!"
