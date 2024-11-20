@@ -60,8 +60,7 @@ As of our release 1.21.3_0, there are 21** item IDs available for use:
    
 *Here is a picture of all 20 freed item ids:*
 
-![image](https://github.com/user-attachments/assets/6d9aed96-b2a8-4791-b73b-2b53ed3594f2)
-
+![image](https://github.com/user-attachments/assets/df571a85-4c9f-471b-9fc0-d78e3fcb17bb)
 
 ## FAQ
 ### "I need more custom items! Please add more!"
