@@ -7,6 +7,12 @@ OUT_DIR=$SCRIPT_DIR/build
 #   echo "Builds the datapack and resource pack into $OUT_DIR."
 # }
 
+clear_output() {
+  pushd $OUT_DIR
+  ls | xargs rm -rf
+  popd
+}
+
 copy_target() {
   if [[ $# -ne 1 ]]; then
     echo "ERROR: Incorrect arguments specified for copy_target."
@@ -113,34 +119,45 @@ if [[ $# -ne 0 ]]; then
   exit 1      
 fi
 
-copy_target pack_data
-copy_target pack_resc
-substitute_refs pack_data components_diamond_horse_armor
-# substitute_refs pack_data components_goat_horn
-substitute_refs pack_data components_music_disc_11
-substitute_refs pack_data components_music_disc_13
-substitute_refs pack_data components_music_disc_blocks
-substitute_refs pack_data components_music_disc_cat
-substitute_refs pack_data components_music_disc_chirp
-substitute_refs pack_data components_music_disc_creator_music_box
-substitute_refs pack_data components_music_disc_creator
-substitute_refs pack_data components_music_disc_far
-substitute_refs pack_data components_music_disc_mall
-substitute_refs pack_data components_music_disc_mellohi
-substitute_refs pack_data components_music_disc_otherside
-substitute_refs pack_data components_music_disc_pigstep
-substitute_refs pack_data components_music_disc_precipice
-substitute_refs pack_data components_music_disc_relic
-substitute_refs pack_data components_music_disc_stal
-substitute_refs pack_data components_music_disc_strad
-substitute_refs pack_data components_music_disc_wait
-substitute_refs pack_data components_music_disc_ward
-substitute_refs pack_data components_poisonous_potato
-substitute_refs pack_data components_totem_of_undying
-check_output pack_data
-combine pack_data isomorphic_data.zip
-check_output pack_resc
-combine pack_resc isomorphic_resc.zip
+### BUILD RULES
+clear_output
+
+copy_target core
+substitute_refs core components_music_disc_11
+substitute_refs core components_music_disc_13
+substitute_refs core components_music_disc_blocks
+substitute_refs core components_music_disc_cat
+substitute_refs core components_music_disc_chirp
+substitute_refs core components_music_disc_creator_music_box
+substitute_refs core components_music_disc_creator
+substitute_refs core components_music_disc_far
+substitute_refs core components_music_disc_mall
+substitute_refs core components_music_disc_mellohi
+substitute_refs core components_music_disc_otherside
+substitute_refs core components_music_disc_pigstep
+substitute_refs core components_music_disc_precipice
+substitute_refs core components_music_disc_relic
+substitute_refs core components_music_disc_stal
+substitute_refs core components_music_disc_strad
+substitute_refs core components_music_disc_wait
+substitute_refs core components_music_disc_ward
+substitute_refs core components_poisonous_potato
+substitute_refs core components_totem_of_undying
+check_output core
+
+copy_target ext_dha
+substitute_refs ext_dha components_diamond_horse_armor
+substitute_refs ext_dha components_music_disc_otherside
+substitute_refs ext_dha components_music_disc_13
+substitute_refs ext_dha components_music_disc_cat
+check_output ext_dha
+
+#copy_target ext_gh
+#substitute_refs ext_gh components_goat_horn
+#check_output ext_gh
+
+combine core Isomorphic.zip
+combine ext_dha IsomorphicExtDHA.zip
 
 echo "Build Successful!"
 echo 

@@ -10,6 +10,38 @@ usage() {
   echo "  -w             Runs assuming a Windows Minecraft install."
 }
 
+overlay_output() {
+  if [[ $# -ne 1  ]]; then
+    echo "ERROR: Incorrect arguments specified for overlay_output."
+    echo
+    exit 255
+  fi
+  output=$1
+
+  if [[ ! -f "$OUT_DIR/$output" ]]; then
+    echo "ERROR: Couldn't find build output zip $output under $OUT_DIR."
+    echo
+    usage
+    exit 5
+  fi
+
+  cp -f "$OUT_DIR/$output" "$MC_DIR/saves/$save/datapacks/"
+  if [[ $? -ne 0 ]]; then
+    echo "ERROR: Failed to overlay datapack $output."
+    echo
+    popd
+    exit 6
+  fi
+
+  cp -f "$OUT_DIR/$output" "$MC_DIR/resourcepacks/"
+  if [[ $? -ne 0 ]]; then
+    echo "ERROR: Failed to overlay resource pack $output."
+    echo
+    popd
+    exit 7
+  fi
+}
+
 if [[ $# -eq 0 ]] || [[ $# -ge 4 ]]; then
   echo "ERROR: Unexpected number of arguments"
   echo
@@ -52,15 +84,8 @@ if [[ $build = true ]]; then
   fi
 fi
 
-if [[ ! -f "$OUT_DIR/isomorphic_data.zip" ]] || [[ ! -f "$OUT_DIR/isomorphic_resc.zip" ]]; then
-  echo "ERROR: Couldn't find both build output zips under $OUT_DIR."
-  echo
-  usage
-  exit 5
-fi
-
-cp -f "$OUT_DIR/isomorphic_data.zip" "$MC_DIR/saves/$save/datapacks/"
-cp -f "$OUT_DIR/isomorphic_resc.zip" "$MC_DIR/resourcepacks/"
+overlay_output Isomorphic.zip
+overlay_output IsomorphicExtDHA.zip
 
 echo "Overlay Successful!"
 echo
