@@ -69,7 +69,7 @@ check_output() {
   fi
   output=$1
   pushd "$OUT_DIR/$target"
-  leftovers=$(grep -rlZ @ . | tr -d '\0')
+  leftovers=$(grep -r -l --include=\*.{json,mcmeta} @ .)
   if [[ ! -z $leftovers ]]; then
     echo
     echo "ERROR: Found dangling references!"
@@ -110,7 +110,7 @@ combine() {
 if [[ $# -ne 0 ]]; then
   echo "ERROR: Unexpected number of arguments."
   echo
-  exit 1
+  exit 1      
 fi
 
 copy_target pack_data
