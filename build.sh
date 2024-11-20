@@ -44,7 +44,7 @@ substitute_refs() {
     exit 255
   fi
   pushd "$OUT_DIR/$target"
-  grep -rlZ \@$ref . | xargs -0 sed -i "/@$ref/r $ref_path"
+  grep -r -l -Z --include=\*.{json,mcmeta} \@$ref . | xargs -0 sed -i "/@$ref/r $ref_path"
   if [[ $? -ne 0 ]]; then 
     echo "ERROR: Failed to substitute definition $ref within $target."
     echo
@@ -52,7 +52,7 @@ substitute_refs() {
     exit 3
   fi
 
-  grep -rlZ \@$ref . | xargs -0 sed -i "s/@$ref//g"
+  grep -r -l -Z --include=\*.{json,mcmeta} \@$ref . | xargs -0 sed -i "s/@$ref//g"
   if [[ $? -ne 0 ]]; then 
     echo "ERROR: Failed to remove references to the object."
     echo
