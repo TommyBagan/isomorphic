@@ -1,3 +1,7 @@
+<p align="center">
+<img src="https://github.com/TommyBagan/isomorphic/blob/main/logo_scaled.png" width="128">
+</p>
+
 # Isomorphic
 ## Description
 This is a Minecraft datapack & resource pack library, which aims to persist current item behaviours with the base game, whilst reducing the `minecraft` item namespace to permit usage of those freed ids by datapack developers.
