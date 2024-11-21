@@ -1,11 +1,18 @@
 #!/bin/bash
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 OUT_DIR=$SCRIPT_DIR/build
+quiet_mode=false
 
-# usage() {
-#   echo "usage: build.sh"
-#   echo "Builds the datapack and resource pack into $OUT_DIR."
-# }
+usage() {
+  if [[ $quiet_mode = false ]]; then
+    echo "usage: build.sh [-q] [VERSION]"
+    echo "Builds the datapack and resource pack into $OUT_DIR,"
+    echo "and builds for release with the optional [VERSION];"
+    echo "that is expected to be in example format 1.21.3v1."
+    echo
+    echo "  -q             Quiet mode, where usage is not outputted."
+  fi
+}
 
 clear_output() {
   pushd $OUT_DIR
@@ -113,10 +120,22 @@ combine() {
   popd
 }
 
-if [[ $# -ne 0 ]]; then
+if [[ $# -gt 2 ]]; then
   echo "ERROR: Unexpected number of arguments."
   echo
   exit 1      
+fi
+
+if [[ $# -ge 1 ]]; then
+  if [[ "$1" == "-q" ]]; then
+    quiet_mode=true
+    release=$2
+  else
+    release=$1
+  fi
+fi
+if [[ ! -z $release ]]; then
+  release=_$release
 fi
 
 ### BUILD RULES
@@ -156,8 +175,8 @@ check_output ext_dha
 #substitute_refs ext_gh components_goat_horn
 #check_output ext_gh
 
-combine core Isomorphic.zip
-combine ext_dha IsomorphicExtDHA.zip
+combine core IsomorphicCore$release.zip
+combine ext_dha IsomorphicExtDHA$release.zip
 
 echo "Build Successful!"
 echo 

@@ -3,8 +3,8 @@ SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 OUT_DIR=$SCRIPT_DIR/build
 
 usage() {
-  echo "usage: overlay.sh [OPTION] [WORLD-SAVE]"
-  echo "Overlays the datapack and resource pack into Minecraft [WORLD-SAVE]."
+  echo "usage: overlay.sh [-b] [-w] <WORLD-SAVE>"
+  echo "Overlays the datapack and resource pack into Minecraft <WORLD-SAVE>."
   echo
   echo "  -b             Builds before overlaying."
   echo "  -w             Runs assuming a Windows Minecraft install."
@@ -75,7 +75,7 @@ if [[ ! -d "$MC_DIR/saves/$save" ]]; then
 fi
 
 if [[ $build = true ]]; then
-  $SCRIPT_DIR/build.sh
+  $SCRIPT_DIR/build.sh -q
   if [[ $? -ne 0 ]]; then
     echo "ERROR: Couldn't build the packs."
     echo
@@ -84,7 +84,7 @@ if [[ $build = true ]]; then
   fi
 fi
 
-overlay_output Isomorphic.zip
+overlay_output IsomorphicCore.zip
 overlay_output IsomorphicExtDHA.zip
 
 echo "Overlay Successful!"
