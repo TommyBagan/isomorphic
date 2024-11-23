@@ -109,13 +109,18 @@ combine() {
   if [[ -f "$OUT_DIR/$output" ]]; then
     rm "$OUT_DIR/$output"
   fi
-  tar -acf $output *
-  if [[ $? -ne 0 ]] || [[ ! -f "./$output" ]]; then
-    echo "ERROR: Failed to combine target $target."
-    echo
-    popd
-    exit 2
-  fi
+  
+  zip -r $output *
+  if [[ $? -ne 0 ]]; then
+    echo "Attempting with tar.exe..."
+    tar.exe -acf $output *
+    if [[ $? -ne 0 ]] || [[ ! -f "./$output" ]]; then
+      echo "ERROR: Failed to combine target $target."
+      echo
+      popd
+      exit 2
+    fi
+  fi 
   mv "./$output" "$OUT_DIR/"
   popd
 }
