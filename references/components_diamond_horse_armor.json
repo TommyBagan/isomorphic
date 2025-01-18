@@ -24,7 +24,7 @@
     "allowed_entities": "minecraft:horse",
     "damage_on_hurt": false,
     "equip_sound": "minecraft:entity.horse.armor",
-    "model": "minecraft:diamond",
+    "asset_id": "minecraft:diamond",
     "slot": "body"
   },
   "!minecraft:jukebox_playable": {},
