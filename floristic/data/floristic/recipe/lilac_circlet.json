@@ -1,0 +1,18 @@
+{
+  "type": "crafting_shaped",
+  "key": {
+    "R": "minecraft:lilac",
+    "S": "minecraft:string"
+  },
+  "pattern": [ 
+    "SRS",
+    "R R",
+    "SRS"
+  ],
+  "result": {
+    "id": "music_disc_5",
+    "count": 1,
+    "components": @components_lilac_circlet
+  },
+  "category": "equipment"
+}

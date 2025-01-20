@@ -84,3 +84,8 @@ The original inspiration was Conure's Video ["What is the best "dummy" item in M
 We have manipulated all obtaining and usage of the items to act the exact same as vanilla, but with the same base item id `music_disc_5`. Most of the heavy lifting is done vi Mojang's datapack component system, which we use to replicate each item's behavior.
 
 ### "Why the name Isomorphic?"
+
+
+## Attribution
+We'd like to thank the following people for use of their works:
+- Thank you to "\_daggsy\_", for  the textures from her resource pack [Flower Crowns](https://modrinth.com/resourcepack/flower-crowns).

@@ -1,0 +1,18 @@
+{
+  "type": "crafting_shaped",
+  "key": {
+    "R": "minecraft:white_tulip",
+    "S": "minecraft:string"
+  },
+  "pattern": [ 
+    "SRS",
+    "R R",
+    "SRS"
+  ],
+  "result": {
+    "id": "music_disc_5",
+    "count": 1,
+    "components": @components_white_tulip_circlet
+  },
+  "category": "equipment"
+}

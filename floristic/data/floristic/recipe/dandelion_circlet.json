@@ -1,0 +1,18 @@
+{
+  "type": "crafting_shaped",
+  "key": {
+    "R": "minecraft:dandelion",
+    "S": "minecraft:string"
+  },
+  "pattern": [ 
+    "SRS",
+    "R R",
+    "SRS"
+  ],
+  "result": {
+    "id": "music_disc_5",
+    "count": 1,
+    "components": @components_dandelion_circlet
+  },
+  "category": "equipment"
+}

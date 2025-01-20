@@ -1,0 +1,23 @@
+{
+  "language.code": "en_us",
+  "language.name": "English",
+  "language.region": "United States",
+  "item.floristic.rose_circlet": "Rose Circlet",
+  "item.floristic.allium_circlet": "Allium Circlet",
+  "item.floristic.azalea_circlet": "Azalea Circlet",
+  "item.floristic.azure_circlet": "Azure Circlet",
+  "item.floristic.cornflower_circlet": "Cornflower Circlet",
+  "item.floristic.dandelion_circlet": "Dandelion Circlet",
+  "item.floristic.lilac_circlet": "Lilac Circlet",
+  "item.floristic.lily_circlet": "Lily Circlet",
+  "item.floristic.orange_tulip_circlet": "Orange Tulip Circlet",
+  "item.floristic.orchid_circlet": "Orchid Circlet",
+  "item.floristic.oxeye_circlet": "Oxeye Circlet",
+  "item.floristic.peony_circlet": "Peony Circlet",
+  "item.floristic.pink_tulip_circlet": "Pink Tulip Circlet",
+  "item.floristic.poppy_circlet": "Poppy Circlet",
+  "item.floristic.red_tulip_circlet": "Red Tulip Circlet",
+  "item.floristic.sunflower_circlet": "Sunflower Circlet",
+  "item.floristic.white_tulip_circlet": "White Tulip Circlet",
+  "item.floristic.wither_rose_circlet": "Wither Rose Circlet"
+}

@@ -1,0 +1,13 @@
+{
+  "pack": {
+    "pack_format": 57,
+    "description": "Datapack for improving vanilla progression."
+  },
+  "filter": {
+    "block": [
+      {
+        "path": "recipe/repair_item"
+      }
+    ]
+  }
+}

@@ -180,8 +180,34 @@ check_output ext_dha
 #substitute_refs ext_gh components_goat_horn
 #check_output ext_gh
 
+copy_target prospective
+check_output prospective
+
+copy_target floristic
+substitute_refs floristic components_rose_circlet
+substitute_refs floristic components_allium_circlet
+substitute_refs floristic components_azalea_circlet
+substitute_refs floristic components_azure_circlet
+substitute_refs floristic components_cornflower_circlet
+substitute_refs floristic components_dandelion_circlet
+substitute_refs floristic components_lilac_circlet
+substitute_refs floristic components_lily_circlet
+substitute_refs floristic components_orange_tulip_circlet
+substitute_refs floristic components_orchid_circlet
+substitute_refs floristic components_oxeye_circlet
+substitute_refs floristic components_peony_circlet
+substitute_refs floristic components_pink_tulip_circlet
+substitute_refs floristic components_poppy_circlet
+substitute_refs floristic components_red_tulip_circlet
+substitute_refs floristic components_sunflower_circlet
+substitute_refs floristic components_white_tulip_circlet
+substitute_refs floristic components_wither_rose_circlet
+check_output floristic
+
 combine core IsomorphicCore$release.zip
 combine ext_dha IsomorphicExtDHA$release.zip
+combine prospective Prospective$release.zip
+combine floristic Floristic$release.zip
 
 echo "Build Successful!"
 echo 
