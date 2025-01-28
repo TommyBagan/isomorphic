@@ -93,7 +93,6 @@ substitute_ref_in_file_to() {
   fi
 
   sed -i "s/@$ref/$new_value/g" "$file"
-  echo "sed -i \"/@$ref/r $new_value\" \"$file\""  
   if [[ $? -ne 0 ]]; then 
     echo "ERROR: Failed to substitute @$ref for $new_value."
     echo
