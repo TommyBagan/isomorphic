@@ -143,7 +143,7 @@ generate_give_item_logic() {
   if [[ ! -d "$func_dir" ]]; then 
     mkdir --parents "$func_dir"
   fi
-  preamble='tellraw @s [{"translate": "Giving ","color": "gray"},{"translate": "$target:$custom_item","color": "green"}]'
+  preamble="tellraw @s [{\"translate\": \"Giving \",\"color\": \"gray\"},{\"translate\": \"$namespace:$custom_item\",\"color\": \"green\"}]"
   function="loot give @s loot $namespace:$unique_folder/$custom_item"
   echo "$preamble" > "$func_dir/give_$custom_item.mcfunction"
   echo "$function" >> "$func_dir/give_$custom_item.mcfunction"
