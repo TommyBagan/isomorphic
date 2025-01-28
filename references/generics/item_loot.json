@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:@minecraft_item",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": @components
+            }
+          ] 
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

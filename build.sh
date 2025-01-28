@@ -1,6 +1,7 @@
 #!/bin/bash
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 OUT_DIR=$SCRIPT_DIR/build
+COMMON_NAMESPACE=isomorphic
 quiet_mode=false
 
 usage() {
@@ -75,12 +76,96 @@ substitute_refs() {
   popd
 }
 
+substitute_ref_in_file_to() {
+  ref=$1
+  file=$2
+  new_value=$3
+  if [[ $# -ne 3 ]]; then
+    echo "ERROR: Incorrect arguments specified for substitute_ref_in_file_to."
+    echo
+    exit 255
+  fi
+
+  if [[ ! -f "$file" ]]; then 
+    echo "ERROR: Specified file for substituion doesn't exist $file."
+    echo
+    exit 1
+  fi
+
+  sed -i "s/@$ref/$new_value/g" "$file"
+  echo "sed -i \"/@$ref/r $new_value\" \"$file\""  
+  if [[ $? -ne 0 ]]; then 
+    echo "ERROR: Failed to substitute @$ref for $new_value."
+    echo
+    exit 2
+  fi
+}
+
+generate_give_item_logic() {
+  if [[ $# -ne 4 ]]; then
+    echo "ERROR: Incorrect arguments specified for check_output."
+    exit 255
+  fi
+  target=$1
+  item_id=$2
+  namespace=$3
+  custom_item=$4
+
+  if [[ ! -d "$OUT_DIR/$target" ]]; then 
+    echo "ERROR: Failed to find copied target $OUT_DIR/$target."
+    echo
+    exit 255
+  fi
+  components_ref=components_$custom_item
+  ref_path="$SCRIPT_DIR/references/$components_ref.json"
+  ls $ref_path
+  if [[ ! -f "$ref_path" ]]; then
+    echo "ERROR: Failed to find referenced item components $ref_path."
+    echo
+    exit 255
+  fi
+
+  generic_loot_table="$SCRIPT_DIR/references/generics/item_loot.json"
+  if [[ ! -f "$generic_loot_table" ]]; then 
+    echo "ERROR: Failed to find predefined generic loot table $generic_loot_table."
+    echo
+    exit 255
+  fi
+  
+  namespace_dir="$OUT_DIR/$target/data/$namespace"
+  if [[ ! -d "$namespace_dir" ]]; then
+    echo "ERROR: Didn't find namespace $namespace within $target."
+    echo
+    exit 255
+  fi
+  
+  unique_folder=$COMMON_NAMESPACE\_item
+  func_dir="$namespace_dir/function/$unique_folder"
+  if [[ ! -d "$func_dir" ]]; then 
+    mkdir --parents "$func_dir"
+  fi
+  preamble='tellraw @s [{"translate": "Giving ","color": "gray"},{"translate": "$target:$custom_item","color": "green"}]'
+  function="loot give @s loot $namespace:$unique_folder/$custom_item"
+  echo "$preamble" > "$func_dir/give_$custom_item.mcfunction"
+  echo "$function" >> "$func_dir/give_$custom_item.mcfunction"
+
+  loot_dir="$namespace_dir/loot_table/$unique_folder"
+  if [[ ! -d "$loot_dir" ]]; then 
+    mkdir --parents "$loot_dir"
+  fi
+  loot_table="$loot_dir/$custom_item.json"
+  cp "$generic_loot_table" "$loot_table"
+  
+  substitute_ref_in_file_to minecraft_item "$loot_table" $item_id
+  substitute_ref_in_file_to components "$loot_table" @$components_ref
+}
+
 check_output() {
   if [[ $# -ne 1 ]]; then
     echo "ERROR: Incorrect arguments specified for check_output."
     exit 255
   fi
-  output=$1
+  target=$1
   pushd "$OUT_DIR/$target"
   leftovers=$(grep -r -l --include=\*.{json,mcmeta} @ .)
   if [[ ! -z $leftovers ]]; then
@@ -184,23 +269,41 @@ copy_target mod_prospective
 check_output mod_prospective
 
 copy_target mod_floristic
+generate_give_item_logic mod_floristic music_disc_5 floristic rose_circlet
 substitute_refs mod_floristic components_rose_circlet
+generate_give_item_logic mod_floristic music_disc_5 floristic allium_circlet
 substitute_refs mod_floristic components_allium_circlet
+generate_give_item_logic mod_floristic music_disc_5 floristic azalea_circlet
 substitute_refs mod_floristic components_azalea_circlet
+generate_give_item_logic mod_floristic music_disc_5 floristic azure_circlet
 substitute_refs mod_floristic components_azure_circlet
+generate_give_item_logic mod_floristic music_disc_5 floristic cornflower_circlet
 substitute_refs mod_floristic components_cornflower_circlet
+generate_give_item_logic mod_floristic music_disc_5 floristic dandelion_circlet
 substitute_refs mod_floristic components_dandelion_circlet
+generate_give_item_logic mod_floristic music_disc_5 floristic lilac_circlet
 substitute_refs mod_floristic components_lilac_circlet
+generate_give_item_logic mod_floristic music_disc_5 floristic lily_circlet
 substitute_refs mod_floristic components_lily_circlet
+generate_give_item_logic mod_floristic music_disc_5 floristic orange_tulip_circlet
 substitute_refs mod_floristic components_orange_tulip_circlet
+generate_give_item_logic mod_floristic music_disc_5 floristic orchid_circlet
 substitute_refs mod_floristic components_orchid_circlet
+generate_give_item_logic mod_floristic music_disc_5 floristic oxeye_circlet
 substitute_refs mod_floristic components_oxeye_circlet
+generate_give_item_logic mod_floristic music_disc_5 floristic peony_circlet
 substitute_refs mod_floristic components_peony_circlet
+generate_give_item_logic mod_floristic music_disc_5 floristic pink_tulip_circlet
 substitute_refs mod_floristic components_pink_tulip_circlet
+generate_give_item_logic mod_floristic music_disc_5 floristic poppy_circlet
 substitute_refs mod_floristic components_poppy_circlet
+generate_give_item_logic mod_floristic music_disc_5 floristic red_tulip_circlet
 substitute_refs mod_floristic components_red_tulip_circlet
+generate_give_item_logic mod_floristic music_disc_5 floristic sunflower_circlet
 substitute_refs mod_floristic components_sunflower_circlet
+generate_give_item_logic mod_floristic music_disc_5 floristic white_tulip_circlet
 substitute_refs mod_floristic components_white_tulip_circlet
+generate_give_item_logic mod_floristic music_disc_11 floristic wither_rose_circlet
 substitute_refs mod_floristic components_wither_rose_circlet
 check_output mod_floristic
 
