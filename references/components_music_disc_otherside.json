@@ -1,18 +1,14 @@
 {
-  "minecraft:attribute_modifiers": {
-    "modifiers": []
-  },
-  "minecraft:enchantments": {
-    "levels": {}
-  },
+  "minecraft:attribute_modifiers": [],
+  "minecraft:enchantments": {},
   "minecraft:item_model": "isomorphic:music_disc_otherside",
   "minecraft:custom_data": {
     "actual_id": "music_disc_otherside"
   },
-  "minecraft:item_name": "{\"translate\":\"item.isomorphic.music_disc_otherside\"}",
-  "minecraft:jukebox_playable": {
-    "song": "isomorphic:otherside"
+  "minecraft:item_name": {
+    "translate": "item.isomorphic.music_disc_otherside"
   },
+  "minecraft:jukebox_playable": "isomorphic:otherside",
   "minecraft:lore": [],
   "minecraft:max_stack_size": 1,
   "minecraft:rarity": "rare",

@@ -4,7 +4,7 @@
     "R": "minecraft:lily_of_the_valley",
     "S": "minecraft:string"
   },
-  "pattern": [ 
+  "pattern": [
     "SRS",
     "R R",
     "SRS"

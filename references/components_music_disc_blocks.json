@@ -1,18 +1,14 @@
 {
-  "minecraft:attribute_modifiers": {
-    "modifiers": []
-  },
-  "minecraft:enchantments": {
-    "levels": {}
-  },
+  "minecraft:attribute_modifiers": [],
+  "minecraft:enchantments": {},
   "minecraft:item_model": "isomorphic:music_disc_blocks",
   "minecraft:custom_data": {
     "actual_id": "music_disc_blocks"
   },
-  "minecraft:item_name": "{\"translate\":\"item.isomorphic.music_disc_blocks\"}",
-  "minecraft:jukebox_playable": {
-    "song": "isomorphic:blocks"
+  "minecraft:item_name": {
+    "translate": "item.isomorphic.music_disc_blocks"
   },
+  "minecraft:jukebox_playable": "isomorphic:blocks",
   "minecraft:lore": [],
   "minecraft:max_stack_size": 1,
   "minecraft:rarity": "uncommon",

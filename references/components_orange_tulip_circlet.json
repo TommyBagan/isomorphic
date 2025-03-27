@@ -1,24 +1,22 @@
 {
-  "minecraft:attribute_modifiers": {
-    "modifiers": [
-      {
-        "type": "minecraft:luck",
-        "slot": "head",
-        "id": "floristic:circlet_luck",
-        "amount": 1,
-        "operation": "add_value"
-      }
-    ]
-  },
-  "minecraft:enchantments": {
-    "levels": {}
-  },
+  "minecraft:attribute_modifiers": [
+    {
+      "type": "minecraft:luck",
+      "slot": "head",
+      "id": "floristic:circlet_luck",
+      "amount": 1,
+      "operation": "add_value"
+    }
+  ],
+  "minecraft:enchantments": {},
   "minecraft:item_model": "floristic:orange_tulip_circlet",
   "minecraft:custom_data": {
     "actual_id": "orange_tulip_circlet"
   },
   "!minecraft:jukebox_playable": {},
-  "minecraft:item_name": "{\"translate\":\"item.floristic.orange_tulip_circlet\"}",
+  "minecraft:item_name": {
+    "translate": "item.floristic.orange_tulip_circlet"
+  },
   "minecraft:lore": [],
   "minecraft:damage": 0,
   "minecraft:max_damage": 40,

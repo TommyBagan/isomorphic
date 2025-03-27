@@ -4,7 +4,7 @@
     "R": "minecraft:oxeye_daisy",
     "S": "minecraft:string"
   },
-  "pattern": [ 
+  "pattern": [
     "SRS",
     "R R",
     "SRS"

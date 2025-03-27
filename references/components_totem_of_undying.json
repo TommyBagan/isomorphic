@@ -1,7 +1,5 @@
 {
-  "minecraft:attribute_modifiers": {
-    "modifiers": []
-  },
+  "minecraft:attribute_modifiers": [],
   "minecraft:death_protection": {
     "death_effects": [
       {
@@ -32,14 +30,14 @@
     ]
   },
   "!minecraft:jukebox_playable": {},
-  "minecraft:enchantments": {
-    "levels": {}
-  },
+  "minecraft:enchantments": {},
   "minecraft:item_model": "isomorphic:totem_of_undying",
   "minecraft:custom_data": {
     "actual_id": "totem_of_undying"
   },
-  "minecraft:item_name": "{\"translate\":\"item.isomorphic.totem_of_undying\"}",
+  "minecraft:item_name": {
+    "translate": "item.isomorphic.totem_of_undying"
+  },
   "minecraft:lore": [],
   "minecraft:max_stack_size": 1,
   "minecraft:rarity": "uncommon",
