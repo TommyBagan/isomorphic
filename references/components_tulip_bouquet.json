@@ -1,0 +1,31 @@
+{
+  "minecraft:attribute_modifiers": [],
+  "minecraft:enchantments": {},
+  "minecraft:item_model": "floristic:tulip_bouquet",
+  "minecraft:custom_data": {
+    "actual_id": "tulip_bouquet"
+  },
+  "!minecraft:jukebox_playable": {},
+  "minecraft:item_name": {
+    "translate": "item.floristic.tulip_bouquet"
+  },
+  "minecraft:lore": [],
+  "minecraft:damage": 0,
+  "minecraft:max_damage": 40,
+  "minecraft:max_stack_size": 1,
+  "minecraft:rarity": "uncommon",
+  "minecraft:repair_cost": 0,
+  "!minecraft:repairable": {},
+  "consumable": {
+    "consume_seconds": 3,
+    "animation": "brush",
+    "has_consume_particles": false,
+    "sound": "minecraft:block.leaf_litter.fall",
+    "on_consume_effects": [
+      {
+        "type": "play_sound",
+        "sound": "minecraft:block.leaf_litter.break"
+      }
+    ]
+  }
+}

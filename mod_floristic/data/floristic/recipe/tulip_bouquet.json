@@ -1,0 +1,22 @@
+{
+  "type": "crafting_shaped",
+  "key": {
+    "R": "minecraft:red_tulip",
+    "W": "minecraft:white_tulip",
+    "P": "minecraft:pink_tulip",
+    "O": "minecraft:orange_tulip",
+    "S": "minecraft:string",
+    "C": "minecraft:resin_clump"
+  },
+  "pattern": [
+    " RW",
+    "SOP",
+    "CS "
+  ],
+  "result": {
+    "id": "music_disc_5",
+    "count": 1,
+    "components": @components_tulip_bouquet
+  },
+  "category": "equipment"
+}

@@ -1,0 +1,49 @@
+{
+  "type": "gift",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "item",
+          "name": "emerald"
+        },
+        {
+          "type": "item",
+          "name": "poppy"
+        }
+      ],
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "villager"
+          }
+        }
+      ]
+    },
+    {
+      "entries": [
+        {
+          "type": "item",
+          "name": "gold_ingot"
+        },
+        {
+          "type": "item",
+          "name": "wither_rose"
+        }
+      ],
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "piglin"
+          }
+        }
+      ]
+    }
+  ]
+}

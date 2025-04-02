@@ -102,7 +102,7 @@ substitute_ref_in_file_to() {
 
 generate_give_item_logic() {
   if [[ $# -ne 4 ]]; then
-    echo "ERROR: Incorrect arguments specified for check_output."
+    echo "ERROR: Incorrect arguments specified for generate_give_item_logic."
     exit 255
   fi
   target=$1
@@ -157,6 +157,75 @@ generate_give_item_logic() {
   
   substitute_ref_in_file_to minecraft_item "$loot_table" $item_id
   substitute_ref_in_file_to components "$loot_table" @$components_ref
+}
+
+generate_recipe_advancement() {
+  if [[ $# -le 4 ]]; then
+    echo "ERROR: Incorrect arguments specified for generate_recipe_advancement."
+    exit 255
+  fi
+  target=$1
+  recipe_id=$2
+  namespace=$3
+  recipe_category=$4
+  shift 4
+  if [[ $# -eq 0 ]]; then
+    echo "ERROR: No dependencies suffixed for generate_recipe_advancement."
+    exit 255
+  fi
+
+  if [[ ! -d "$OUT_DIR/$target" ]]; then 
+    echo "ERROR: Failed to find copied target $OUT_DIR/$target."
+    echo
+    exit 255
+  fi
+
+  namespace_dir="$OUT_DIR/$target/data/$namespace"
+  if [[ ! -d "$namespace_dir" ]]; then
+    echo "ERROR: Didn't find namespace $namespace within $target."
+    echo
+    exit 255
+  fi
+
+  category_dir="$namespace_dir/advancement/recipes/$recipe_category"
+  if [[ ! -d "$category_dir" ]]; then
+    mkdir --parents "$category_dir"
+  fi
+
+  recipe_adv="$category_dir/$recipe_id.json"
+  if [[ -f "$recipe_adv" ]]; then
+    echo "ERROR: Prexisting recipe already found for $recipe_adv."
+    echo
+    exit 255
+  fi
+
+  criteria=""
+  requirements=""
+  for dependency in "$@"
+  do
+    criteria+=",\"has_$dependency\":{\"conditions\":{\"items\":[{\"items\":\"minecraft:$dependency\"}]},\"trigger\":\"minecraft:inventory_changed\"}"
+    requirements+=",\"has_$dependency\""
+  done
+
+  if [[ -z "$criteria" || -z "$requirements" ]]; then
+    echo "ERROR: Couldn't construct criteria or requirements."
+    echo
+    exit 255
+  fi
+
+  generic_recipe_advancement="$SCRIPT_DIR/references/generics/recipe_advancement.json"
+  if [[ ! -f "$generic_recipe_advancement" ]]; then 
+    echo "ERROR: Failed to find predefined generic advancement $generic_recipe_advancement."
+    echo
+    exit 255
+  fi
+  
+  cp "$generic_recipe_advancement" "$recipe_adv"
+
+  substitute_ref_in_file_to recipe_id "$recipe_adv" $recipe_id
+  substitute_ref_in_file_to namespace "$recipe_adv" $namespace
+  substitute_ref_in_file_to criteria "$recipe_adv" $criteria
+  substitute_ref_in_file_to requirements "$recipe_adv" $requirements
 }
 
 check_output() {
@@ -267,43 +336,85 @@ check_output ext_dha
 copy_target mod_prospective
 check_output mod_prospective
 
+# Floristic
 copy_target mod_floristic
+## Rose Circlet
 generate_give_item_logic mod_floristic music_disc_5 floristic rose_circlet
+generate_recipe_advancement mod_floristic rose_circlet floristic combat rose_bush
 substitute_refs mod_floristic components_rose_circlet
+## Allium Circlet
 generate_give_item_logic mod_floristic music_disc_5 floristic allium_circlet
+generate_recipe_advancement mod_floristic allium_circlet floristic combat allium
 substitute_refs mod_floristic components_allium_circlet
+## Azalea Circlet
 generate_give_item_logic mod_floristic music_disc_5 floristic azalea_circlet
+generate_recipe_advancement mod_floristic azalea_circlet floristic combat flowering_azalea_leaves
 substitute_refs mod_floristic components_azalea_circlet
+## Azure Circlet
 generate_give_item_logic mod_floristic music_disc_5 floristic azure_circlet
+generate_recipe_advancement mod_floristic azure_circlet floristic combat azure_bluet
 substitute_refs mod_floristic components_azure_circlet
+## Cornflower Circlet
 generate_give_item_logic mod_floristic music_disc_5 floristic cornflower_circlet
+generate_recipe_advancement mod_floristic cornflower_circlet floristic combat cornflower
 substitute_refs mod_floristic components_cornflower_circlet
+## Dandelion Circlet
 generate_give_item_logic mod_floristic music_disc_5 floristic dandelion_circlet
+generate_recipe_advancement mod_floristic dandelion_circlet floristic combat dandelion
 substitute_refs mod_floristic components_dandelion_circlet
+## Lilac Circlet
 generate_give_item_logic mod_floristic music_disc_5 floristic lilac_circlet
+generate_recipe_advancement mod_floristic lilac_circlet floristic combat lilac
 substitute_refs mod_floristic components_lilac_circlet
+## Lily Circlet
 generate_give_item_logic mod_floristic music_disc_5 floristic lily_circlet
+generate_recipe_advancement mod_floristic lily_circlet floristic combat lily_of_the_valley
 substitute_refs mod_floristic components_lily_circlet
+## Orange Tulip Circlet
 generate_give_item_logic mod_floristic music_disc_5 floristic orange_tulip_circlet
+generate_recipe_advancement mod_floristic orange_tulip_circlet floristic combat orange_tulip
 substitute_refs mod_floristic components_orange_tulip_circlet
+## Orchid Circlet
 generate_give_item_logic mod_floristic music_disc_5 floristic orchid_circlet
+generate_recipe_advancement mod_floristic orchid_circlet floristic combat blue_orchid
 substitute_refs mod_floristic components_orchid_circlet
+## Oxeye Circlet
 generate_give_item_logic mod_floristic music_disc_5 floristic oxeye_circlet
+generate_recipe_advancement mod_floristic oxeye_circlet floristic combat oxeye_daisy
 substitute_refs mod_floristic components_oxeye_circlet
+## Peony Circlet
 generate_give_item_logic mod_floristic music_disc_5 floristic peony_circlet
+generate_recipe_advancement mod_floristic peony_circlet floristic combat peony
 substitute_refs mod_floristic components_peony_circlet
+## Pink Tulip Circlet
 generate_give_item_logic mod_floristic music_disc_5 floristic pink_tulip_circlet
+generate_recipe_advancement mod_floristic pink_tulip_circlet floristic combat pink_tulip
 substitute_refs mod_floristic components_pink_tulip_circlet
+## Poppy Circlet
 generate_give_item_logic mod_floristic music_disc_5 floristic poppy_circlet
+generate_recipe_advancement mod_floristic poppy_circlet floristic combat poppy
 substitute_refs mod_floristic components_poppy_circlet
+## Red Tulip Circlet
 generate_give_item_logic mod_floristic music_disc_5 floristic red_tulip_circlet
+generate_recipe_advancement mod_floristic red_tulip_circlet floristic combat red_tulip
 substitute_refs mod_floristic components_red_tulip_circlet
+## Sunflower Circlet
 generate_give_item_logic mod_floristic music_disc_5 floristic sunflower_circlet
+generate_recipe_advancement mod_floristic sunflower_circlet floristic combat sunflower
 substitute_refs mod_floristic components_sunflower_circlet
+## White Tulip Circlet
 generate_give_item_logic mod_floristic music_disc_5 floristic white_tulip_circlet
+generate_recipe_advancement mod_floristic white_tulip_circlet floristic combat white_tulip
 substitute_refs mod_floristic components_white_tulip_circlet
+## Wither Rose Circlet
 generate_give_item_logic mod_floristic music_disc_11 floristic wither_rose_circlet
+generate_recipe_advancement mod_floristic wither_rose_circlet floristic combat wither_rose
 substitute_refs mod_floristic components_wither_rose_circlet
+## Tulip Bouquet
+generate_give_item_logic mod_floristic music_disc_5 floristic tulip_bouquet
+generate_recipe_advancement mod_floristic tulip_bouquet floristic tools red_tulip orange_tulip white_tulip pink_tulip
+substitute_refs mod_floristic components_tulip_bouquet
+
 check_output mod_floristic
 
 combine core IsomorphicCore$release.zip
