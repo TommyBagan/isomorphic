@@ -1,0 +1,265 @@
+{
+  "description": {
+    "translate": "enchantment.floristic.wilting"
+  },
+  "exclusive_set": [],
+  "supported_items": [],
+  "primary_items": [],
+  "weight": 1,
+  "max_level": 3,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 1
+  },
+  "max_cost": {
+    "base": 1,
+    "per_level_above_first": 1
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "armor",
+    "chest",
+    "body",
+    "feet",
+    "legs",
+    "head"
+  ],
+  "effects": {
+    "tick": [
+      {
+        "effect": {
+          "type": "all_of",
+          "effects": [
+            {
+              "type": "spawn_particles",
+              "particle": {
+                "type": "pale_oak_leaves"
+              },
+              "horizontal_position": {
+                "type": "in_bounding_box",
+                "offset": 0,
+                "scale": 2
+              },
+              "vertical_position": {
+                "type": "in_bounding_box",
+                "offset": 1
+              },
+              "horizontal_velocity": {
+                "base": 0
+              },
+              "vertical_velocity": {
+                "base": -0.1
+              },
+              "speed": 1
+            },
+            {
+              "type": "run_function",
+              "function": "floristic:mechanics/use_wilt_1"
+            }
+          ]
+        },
+        "requirements": [
+          {
+            "condition": "all_of",
+            "terms": [
+              {
+                "condition": "any_of",
+                "terms": [
+                  {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "effects": {
+                        "minecraft:wither": {}
+                      }
+                    }
+                  },
+                  {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "effects": {
+                        "minecraft:poison": {}
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "condition": "value_check",
+                "range": {
+                  "max": 1,
+                  "min": 1
+                },
+                "value": {
+                  "type": "enchantment_level",
+                  "amount": {
+                    "type": "linear",
+                    "base": 1,
+                    "per_level_above_first": 1
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "effect": {
+          "type": "all_of",
+          "effects": [
+            {
+              "type": "spawn_particles",
+              "particle": {
+                "type": "pale_oak_leaves"
+              },
+              "horizontal_position": {
+                "type": "in_bounding_box",
+                "offset": 0,
+                "scale": 2
+              },
+              "vertical_position": {
+                "type": "in_bounding_box",
+                "offset": 1
+              },
+              "horizontal_velocity": {
+                "base": 0
+              },
+              "vertical_velocity": {
+                "base": -0.1
+              },
+              "speed": 1
+            },
+            {
+              "type": "run_function",
+              "function": "floristic:mechanics/use_wilt_2"
+            }
+          ]
+        },
+        "requirements": [
+          {
+            "condition": "all_of",
+            "terms": [
+              {
+                "condition": "any_of",
+                "terms": [
+                  {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "effects": {
+                        "minecraft:wither": {}
+                      }
+                    }
+                  },
+                  {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "effects": {
+                        "minecraft:poison": {}
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "condition": "value_check",
+                "range": {
+                  "max": 2,
+                  "min": 2
+                },
+                "value": {
+                  "type": "enchantment_level",
+                  "amount": {
+                    "type": "linear",
+                    "base": 1,
+                    "per_level_above_first": 1
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "effect": {
+          "type": "all_of",
+          "effects": [
+            {
+              "type": "spawn_particles",
+              "particle": {
+                "type": "pale_oak_leaves"
+              },
+              "horizontal_position": {
+                "type": "in_bounding_box",
+                "offset": 0,
+                "scale": 2
+              },
+              "vertical_position": {
+                "type": "in_bounding_box",
+                "offset": 1
+              },
+              "horizontal_velocity": {
+                "base": 0
+              },
+              "vertical_velocity": {
+                "base": -0.1
+              },
+              "speed": 1
+            },
+            {
+              "type": "run_function",
+              "function": "floristic:mechanics/use_wilt_3"
+            }
+          ]
+        },
+        "requirements": [
+          {
+            "condition": "all_of",
+            "terms": [
+              {
+                "condition": "any_of",
+                "terms": [
+                  {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "effects": {
+                        "minecraft:wither": {}
+                      }
+                    }
+                  },
+                  {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "effects": {
+                        "minecraft:poison": {}
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "condition": "value_check",
+                "range": {
+                  "max": 3,
+                  "min": 3
+                },
+                "value": {
+                  "type": "enchantment_level",
+                  "amount": {
+                    "type": "linear",
+                    "base": 1,
+                    "per_level_above_first": 1
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
