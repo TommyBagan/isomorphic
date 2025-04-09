@@ -39,5 +39,15 @@
   "item.isomorphic.music_disc_wait": "Music Disc",
   "item.isomorphic.music_disc_ward": "Music Disc",
   "item.isomorphic.poisonous_potato": "Poisonous Potato",
-  "item.isomorphic.totem_of_undying": "Totem of Undying"
+  "item.isomorphic.totem_of_undying": "Totem of Undying",
+  "log.isomorphic.debug": "DEBUG",
+  "log.isomorphic.trace": "TRACE",
+  "log.isomorphic.alert": "ALERT",
+  "log.isomorphic.fatal": "FATAL",
+  "log.isomorphic.abort": "ABORT",
+  "log.isomorphic.debug.hover": "This is a debug level message outputted by a datapack, which is for purpose is for problem determination. Please disable debug messages if there isn't a problem you are attempting to diagnose.",
+  "log.isomorphic.trace.hover": "This is a trace level message outputted by a datapack, which just provides context as to what the datapack is doing.",
+  "log.isomorphic.alert.hover": "An error has ocurred within a datapack, likely due to incorrect usage. However, this type of error isn't expected to affect other datapack functionality.",
+  "log.isomorphic.fatal.hover": "An disruptive error has ocurred within a datapack, likely due to incorrect usage. This type of error is also likely to affect other functionality.",
+  "log.isomorphic.abort.hover": "An internal error has ocurred within a datapack, which isn't expected behaviour. Please report this to the relevant datapack author(s)."
 }
