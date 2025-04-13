@@ -1,0 +1,15 @@
+{
+  "condition": "value_check",
+  "range": {
+    "min": {
+      "type": "storage",
+      "path": "logging.max_size_excl",
+      "storage": "isomorphic:config"
+    }
+  },
+  "value": {
+    "type": "storage",
+    "path": "history.log_size",
+    "storage": "isomorphic:temp"
+  }
+}
