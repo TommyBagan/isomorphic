@@ -10,7 +10,7 @@ $function isomorphic:internal/call_stack/push {namespace:"$(namespace)",function
 # Runs the function, which can read from local.arguments.
 $execute store result storage isomorphic:temp local.caller.return_code int 1 run function $(namespace):$(function)
 
-# 
+# We exit the call routines early if we detect stack corruption.
 execute if data storage isomorphic:global {flags:{call_stack_corrupted:true}} run return 255
 
 # Pops the call stack.

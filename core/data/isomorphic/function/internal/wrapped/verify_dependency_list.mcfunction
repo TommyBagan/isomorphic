@@ -20,7 +20,7 @@ data modify storage isomorphic:temp local.lookup.dependency set from storage iso
 execute store result storage isomorphic:temp local.return_code int 1 run function isomorphic:internal/subroutine/verify_registered with storage isomorphic:temp local.lookup
 
 # If it fails due to an non-zero retcode, we attempt to load_dependency
-execute unless predicate isomorphic:call_stack/is_pass_return_code run data modify storage isomorphic:temp local.lookup.datapack set from storage isomorphic:global pm.this.datapack
+execute unless predicate isomorphic:call_stack/is_pass_return_code run data modify storage isomorphic:temp local.lookup.path set from storage isomorphic:global pm.this.path
 execute unless predicate isomorphic:call_stack/is_pass_return_code run function isomorphic:internal/subroutine/load_dependency with storage isomorphic:temp local.lookup
 
 # Load dependency sets local.success_code to a 1 on success.

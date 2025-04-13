@@ -20,6 +20,9 @@ data modify storage isomorphic:global pm.this.dependencies set from storage isom
 # Marks as unregistered.
 data modify storage isomorphic:global pm.this.registered set value false
 
+# Removes any previous archives of the current pack.
+function isomorphic:internal/subroutine/remove_archive with storage isomorphic:temp local.arguments
+
 # Verifies dependency list.
 execute store result storage isomorphic:temp local.return_code int 1 run function isomorphic:api/call {namespace:"isomorphic",function:"internal/wrapped/verify_dependency_list",arguments:{}}
 data modify storage isomorphic:temp local.saved_return_code set from storage isomorphic:temp local.return_code

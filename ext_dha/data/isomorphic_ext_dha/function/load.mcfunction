@@ -1,1 +1,1 @@
-tellraw @a [{"translate": "Successfully loaded ","color": "gray"},{"translate": "Isomorphic Extension for Diamond Horse Armor","color": "green"}]
+function isomorphic:api/register {name:"isomorphic_ext_dha",path:"file/IsomorphicExtDHA.zip",dependencies:["file/IsomorphicCore.zip"]}

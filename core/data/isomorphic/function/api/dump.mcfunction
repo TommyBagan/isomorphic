@@ -1,8 +1,8 @@
 
 ### Description:
-# This will copy all isomorphic information to the .
+# This will copy all isomorphic information to isomorphic:dump/dump.
 ### Usage:
-# function isomorphic:api/  {namespace:"isomorphic",function:"internal/wrapped/init_config",arguments:{force:<bool>}}
+# function isomorphic:api/dump
 ###
 
 # Clears any previous dump.

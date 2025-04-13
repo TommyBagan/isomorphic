@@ -10,6 +10,11 @@ data modify storage isomorphic:global pm.this.dependencies set from storage isom
 # Removes this field to avoid duplication.
 data remove storage isomorphic:global pm.this.path
 
+# Core specific behaviour, whereby we reset the package management in global.
+execute if data storage isomorphic:temp {local:{name:"isomorphic"}} run data modify storage isomorphic:temp local.archive set from storage isomorphic:global pm.this
+execute if data storage isomorphic:temp {local:{name:"isomorphic"}} run data remove storage isomorphic:global pm
+execute if data storage isomorphic:temp {local:{name:"isomorphic"}} run data modify storage isomorphic:global pm.this set from storage isomorphic:temp local.archive
+
 # Copies the package record so other datapacks can search for it
 $data modify storage isomorphic:global pm."$(path)" set from storage isomorphic:global pm.this
 
