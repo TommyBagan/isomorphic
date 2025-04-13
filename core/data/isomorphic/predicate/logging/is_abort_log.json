@@ -1,0 +1,11 @@
+{
+  "condition": "value_check",
+  "range": {
+    "min": 4
+  },
+  "value": {
+    "type": "storage",
+    "storage": "isomorphic:temp",
+    "path": "local.arguments.level"
+  }
+}

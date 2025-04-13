@@ -1,0 +1,9 @@
+{
+  "condition": "value_check",
+  "range": 0,
+  "value": {
+    "type": "storage",
+    "storage": "isomorphic:global",
+    "path": "pm.this.dependencies_size"
+  }
+}

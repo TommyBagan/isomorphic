@@ -1,0 +1,15 @@
+{
+  "condition": "value_check",
+  "range": {
+    "min": {
+      "type": "storage",
+      "path": "logging.level",
+      "storage": "isomorphic:config"
+    }
+  },
+  "value": {
+    "type": "storage",
+    "storage": "isomorphic:temp",
+    "path": "local.arguments.level"
+  }
+}
