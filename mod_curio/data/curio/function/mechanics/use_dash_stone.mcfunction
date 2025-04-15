@@ -10,7 +10,7 @@ scoreboard players set @s curio_dash_dash_dist 0
 execute store result score @s curio_dash_dash_dist run execute as @s positioned ~ ~0.5 ~ run function curio:mechanics/dash_ray
 
 # We emit the wind sound if we are about to be teleported.
-execute unless score @s curio_dash_dash_dist matches 0 run playsound minecraft:entity.breeze.shoot player @s ~ ~ ~ 0.05 1.2
+execute unless score @s curio_dash_dash_dist matches 0 run playsound minecraft:entity.breeze.shoot player @s ~ ~ ~ 0.1 1.2
 
 # We teleport just before the solid block we found.
 execute if score @s curio_dash_dash_dist matches 1 run execute as @s positioned ~ ~0.5 ~ run tp @s ^ ^ ^0.3

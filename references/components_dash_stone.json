@@ -20,7 +20,7 @@
     "consume_seconds": 0.2,
     "animation": "bow",
     "has_consume_particles": false,
-    "sound": "minecraft:block.amethyst_block.hit"
+    "sound": "minecraft:intentionally_empty"
   },
   "use_cooldown": {
     "seconds": 1,
