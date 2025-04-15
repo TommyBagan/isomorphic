@@ -1,0 +1,1 @@
+function isomorphic:api/register {name:"curio",path:"file/Curio.zip",dependencies:["file/IsomorphicCore.zip"]}

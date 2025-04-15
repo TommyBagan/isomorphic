@@ -1,0 +1,13 @@
+{
+  "function": "sequence",
+  "functions": [
+    {
+      "function": "set_item",
+      "item": "music_disc_5"
+    },
+    {
+      "function": "set_components",
+      "components": @components_dash_stone
+    }
+  ]
+}

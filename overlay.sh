@@ -88,6 +88,7 @@ overlay_output IsomorphicCore.zip
 overlay_output IsomorphicExtDHA.zip
 overlay_output Floristic.zip
 overlay_output Prospective.zip
+overlay_output Curio.zip
 
 echo "Overlay Successful!"
 echo

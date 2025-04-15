@@ -109,4 +109,6 @@ We have manipulated all obtaining and usage of the items to act the exact same a
 
 We'd like to thank the following people for use of their works:
 
-- Thank you to "\_daggsy\_", for  the textures from her resource pack [Flower Crowns](https://modrinth.com/resourcepack/flower-crowns).
+- Thank you to "\_daggsy\_", for the textures from her resource pack [Flower Crowns](https://modrinth.com/resourcepack/flower-crowns).
+
+- Thank you to "DanieruArt", for the textures from his itch.io page [16x16 RPG Gems and Stones](https://danieruart.itch.io/16x16-rpg-gems-and-stones-icon-pack).
