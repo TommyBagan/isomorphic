@@ -1,7 +1,7 @@
 ### Description:
 # This will generate a local stack in isomorphic:temp.
 ### Usage:
-# function isomorphic:push {namespace:<name>,function:<name>,arguments:<object>}
+# function isomorphic:internal/call_stack/push {namespace:<name>,function:<name>,arguments:<object>}
 ###
 
 # Records the attempt at a push.

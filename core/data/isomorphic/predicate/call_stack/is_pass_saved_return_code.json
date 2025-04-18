@@ -1,0 +1,9 @@
+{
+  "condition": "value_check",
+  "range": 0,
+  "value": {
+    "type": "storage",
+    "path": "local.saved_return_code",
+    "storage": "isomorphic:temp"
+  }
+}

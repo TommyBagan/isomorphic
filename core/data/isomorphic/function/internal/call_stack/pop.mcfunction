@@ -1,7 +1,7 @@
 ### Description:
 # This will pop a local stack frame in isomorphic:temp.
 ### Usage:
-# function isomorphic:pop
+# function isomorphic:internal/call_stack/pop
 ###
 
 # Records the attempt at a pop.

@@ -1,0 +1,9 @@
+{
+  "condition": "value_check",
+  "range": 1,
+  "value": {
+    "type": "storage",
+    "path": "local.root",
+    "storage": "isomorphic:temp"
+  }
+}

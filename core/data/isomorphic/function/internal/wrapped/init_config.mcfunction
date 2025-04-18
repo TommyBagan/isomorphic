@@ -32,5 +32,13 @@ execute if data storage isomorphic:temp {local:{arguments:{force:true}}} run dat
 execute unless data storage isomorphic:config diagnostics.clear_history_on_reload run data modify storage isomorphic:config diagnostics.clear_history_on_reload set value false
 execute if data storage isomorphic:temp {local:{arguments:{force:true}}} run data modify storage isomorphic:config diagnostics.clear_history_on_reload set value false
 
+# Defaults to enable periodic functions to always be rescheduled, and to have a period of 1 second.
+execute if data storage isomorphic:temp {local:{arguments:{force:true}}} run data remove storage isomorphic:config periodic
+execute unless data storage isomorphic:config periodic.agnostic_reschedule run data modify storage isomorphic:config periodic.agnostic_reschedule set value true
+execute if data storage isomorphic:temp {local:{arguments:{force:true}}} run data modify storage isomorphic:config periodic.agnostic_reschedule set value true
+
+execute unless data storage isomorphic:config periodic.ticks run data modify storage isomorphic:config periodic.ticks set value 40
+execute if data storage isomorphic:temp {local:{arguments:{force:true}}} run data modify storage isomorphic:config periodic.ticks set value 40
+
 
 return 0

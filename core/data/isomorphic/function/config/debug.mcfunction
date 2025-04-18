@@ -27,3 +27,9 @@ data modify storage isomorphic:config diagnostics.record_calls set value true
 
 # The history may have useful information, so we shouldn't clear it.
 data modify storage isomorphic:config diagnostics.clear_history_on_reload set value false
+
+# Agnostic rescheduling would be helpful, as debug environments may lag.
+data modify storage isomorphic:config periodic.agnostic_reschedule set value true
+
+# The period functions should run frequently as we debug the issue.
+data modify storage isomorphic:config periodic.ticks set value 20

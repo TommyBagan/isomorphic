@@ -31,10 +31,10 @@ data modify storage isomorphic:temp local.saved_return_code set from storage iso
 execute if predicate isomorphic:call_stack/is_pass_return_code run data modify storage isomorphic:global pm.this.registered set value true
 
 # We log appropriately depending on the error.
-execute if predicate isomorphic:call_stack/is_pass_return_code run data modify storage isomorphic:temp local.log_msg.message.text set value "Registered successfully."
-execute if predicate isomorphic:call_stack/is_pass_return_code run function isomorphic:api/log/trace with storage isomorphic:temp local.log_msg
-execute unless predicate isomorphic:call_stack/is_pass_return_code run data modify storage isomorphic:temp local.log_msg.message.text set value "Failed to register!"
-execute unless predicate isomorphic:call_stack/is_pass_return_code run function isomorphic:api/log/fatal with storage isomorphic:temp local.log_msg
+execute if predicate isomorphic:call_stack/is_pass_saved_return_code run data modify storage isomorphic:temp local.log_msg.message.text set value "Registered successfully."
+execute if predicate isomorphic:call_stack/is_pass_saved_return_code run function isomorphic:api/log/trace with storage isomorphic:temp local.log_msg
+execute unless predicate isomorphic:call_stack/is_pass_saved_return_code run data modify storage isomorphic:temp local.log_msg.message.text set value "Failed to register!"
+execute unless predicate isomorphic:call_stack/is_pass_saved_return_code run function isomorphic:api/log/fatal with storage isomorphic:temp local.log_msg
 
 # Indicates we will archive the pack.
 data modify storage isomorphic:temp local.log_msg.message.text set value "Archiving the pack for future reference."
