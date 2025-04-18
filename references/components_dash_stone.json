@@ -1,13 +1,13 @@
 {
   "minecraft:attribute_modifiers": [],
   "minecraft:enchantments": {},
-  "minecraft:item_model": "curio:dash_stone",
+  "minecraft:item_model": "curate:dash_stone",
   "minecraft:custom_data": {
     "actual_id": "dash_stone"
   },
   "!minecraft:jukebox_playable": {},
   "minecraft:item_name": {
-    "translate": "item.curio.dash_stone"
+    "translate": "item.curate.dash_stone"
   },
   "minecraft:lore": [],
   "minecraft:damage": 0,
@@ -24,6 +24,6 @@
   },
   "use_cooldown": {
     "seconds": 1,
-    "cooldown_group": "curio:stones"
+    "cooldown_group": "curate:stones"
   }
 }
