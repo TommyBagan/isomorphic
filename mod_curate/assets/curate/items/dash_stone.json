@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "model",
-    "model": "curio:item/dash_stone"
+    "model": "curate:item/dash_stone"
   }
 }

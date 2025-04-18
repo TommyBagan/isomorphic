@@ -333,12 +333,12 @@ check_output ext_dha
 #substitute_refs ext_gh components_goat_horn
 #check_output ext_gh
 
-# Curio
-copy_target mod_curio
+# Curate
+copy_target mod_curate
 ## Dash Stone
-generate_give_item_logic mod_curio music_disc_5 curio dash_stone
-substitute_refs mod_curio components_dash_stone
-check_output mod_curio
+generate_give_item_logic mod_curate music_disc_5 curate dash_stone
+substitute_refs mod_curate components_dash_stone
+check_output mod_curate
 
 copy_target mod_prospective
 check_output mod_prospective
@@ -428,7 +428,7 @@ combine core IsomorphicCore$release.zip
 combine ext_dha IsomorphicExtDHA$release.zip
 combine mod_prospective Prospective$release.zip
 combine mod_floristic Floristic$release.zip
-combine mod_curio Curio$release.zip
+combine mod_curate Curate$release.zip
 
 echo "Build Successful!"
 echo 

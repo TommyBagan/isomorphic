@@ -1,0 +1,1 @@
+function isomorphic:api/register {name:"curate",path:"file/Curate.zip",dependencies:["file/IsomorphicCore.zip"]}

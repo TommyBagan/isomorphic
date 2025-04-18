@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "curio:item/gems_purple_12"
+    "layer0": "curate:item/gems_blue_11"
   }
 }

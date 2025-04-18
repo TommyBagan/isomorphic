@@ -14,7 +14,7 @@
     }
   },
   "rewards": {
-    "function": "curio:mechanics/use_dash_stone"
+    "function": "curate:mechanics/use_dash_stone"
   },
   "sends_telemetry_event": false
 }
