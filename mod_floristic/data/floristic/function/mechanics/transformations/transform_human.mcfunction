@@ -1,0 +1,9 @@
+attribute @s scale base reset
+attribute @s step_height base reset
+attribute @s jump_strength base reset
+attribute @s block_interaction_range base reset
+attribute @s entity_interaction_range base reset
+attribute @s movement_speed base reset
+attribute @s block_break_speed base reset
+attribute @s luck base reset
+attribute @s minecraft:attack_knockback base reset
