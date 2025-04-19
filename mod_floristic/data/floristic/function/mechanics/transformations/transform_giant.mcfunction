@@ -1,4 +1,4 @@
-attribute @s scale base set 1.33
+attribute @s scale base set 1.3
 attribute @s step_height base set 1.0
 attribute @s jump_strength base set 0.53
 attribute @s block_interaction_range base set 5
