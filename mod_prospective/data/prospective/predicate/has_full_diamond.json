@@ -1,0 +1,28 @@
+{
+  "condition": "entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "head": {
+        "items": [
+          "diamond_helmet"
+        ]
+      },
+      "chest": {
+        "items": [
+          "diamond_chestplate"
+        ]
+      },
+      "legs": {
+        "items": [
+          "diamond_leggings"
+        ]
+      },
+      "feet": {
+        "items": [
+          "diamond_boots"
+        ]
+      }
+    }
+  }
+}

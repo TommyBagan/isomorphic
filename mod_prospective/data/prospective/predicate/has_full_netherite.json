@@ -1,0 +1,28 @@
+{
+  "condition": "entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "head": {
+        "items": [
+          "netherite_helmet"
+        ]
+      },
+      "chest": {
+        "items": [
+          "netherite_chestplate"
+        ]
+      },
+      "legs": {
+        "items": [
+          "netherite_leggings"
+        ]
+      },
+      "feet": {
+        "items": [
+          "netherite_boots"
+        ]
+      }
+    }
+  }
+}
