@@ -1,5 +1,6 @@
 # We do our resetting of the working areas early.
 execute if data storage isomorphic:config {diagnostics:{clear_history_on_reload:true}} run data remove storage isomorphic:temp history
+execute if data storage isomorphic:config {diagnostics:{clear_dump_on_reload:true}} run data remove storage isomorphic:dump dump
 data remove storage isomorphic:temp local
 data remove storage isomorphic:global flags
 data remove storage isomorphic:global pm

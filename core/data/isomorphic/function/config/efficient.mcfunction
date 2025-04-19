@@ -24,6 +24,9 @@ data modify storage isomorphic:config diagnostics.record_calls set value false
 # The history can be bloated, so we should clear it.
 data modify storage isomorphic:config diagnostics.clear_history_on_reload set value true
 
+# The dump is huge and may be loaded into cache, so we should clear it.
+data modify storage isomorphic:config diagnostics.clear_dump_on_reload set value true
+
 # Agnostic rescheduling can cause unnecessary operations, so is disabled.
 data modify storage isomorphic:config periodic.agnostic_reschedule set value false
 
