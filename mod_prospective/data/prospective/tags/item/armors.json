@@ -16,6 +16,10 @@
     "golden_boots",
     "golden_chestplate",
     "golden_leggings",
-    "golden_helmet"
+    "golden_helmet",
+    "leather_boots",
+    "leather_chestplate",
+    "leather_leggings",
+    "leather_helmet"
   ]
 }
