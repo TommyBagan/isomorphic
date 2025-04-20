@@ -2,5 +2,6 @@
   "language.code": "en_us",
   "language.name": "English",
   "language.region": "United States",
-  "actionbar.prospective.unity": "Your unity of armor type buffs you."
+  "actionbar.prospective.unity": "Your unity of armor type buffs you.",
+  "item.prospective.strong_upgrade_smithing_template.new": "Weak Upgrade"
 }
