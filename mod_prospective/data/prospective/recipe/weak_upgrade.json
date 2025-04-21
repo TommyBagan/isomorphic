@@ -1,0 +1,18 @@
+{
+  "type": "crafting_shaped",
+  "key": {
+    "D": "minecraft:deepslate",
+    "R": "minecraft:resin_clump"
+  },
+  "pattern": [
+    "DDD",
+    "DRD",
+    "DDD"
+  ],
+  "result": {
+    "id": "music_disc_13",
+    "count": 1,
+    "components": @components_weak_upgrade
+  },
+  "category": "misc"
+}

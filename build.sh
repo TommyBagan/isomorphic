@@ -340,7 +340,12 @@ generate_give_item_logic mod_curate music_disc_5 curate dash_stone
 substitute_refs mod_curate components_dash_stone
 check_output mod_curate
 
+# Prospective
 copy_target mod_prospective
+## Weak Upgrade
+generate_give_item_logic mod_prospective music_disc_13 prospective weak_upgrade
+generate_recipe_advancement mod_prospective weak_upgrade prospective misc deepslate resin_clump
+substitute_refs mod_prospective components_weak_upgrade
 check_output mod_prospective
 
 # Floristic

@@ -3,5 +3,7 @@
   "language.name": "English",
   "language.region": "United States",
   "actionbar.prospective.unity": "Your unity of armor type buffs you.",
-  "item.prospective.strong_upgrade_smithing_template.new": "Weak Upgrade"
+  "item.prospective.weak_upgrade_smithing_template.new": "Weak Upgrade",
+  "item.prospective.smithing_template.weak_upgrade.ingredients": "Blocks of Ingot Metal",
+  "item.prospective.smithing_template.weak_upgrade.applies_to": "Leather Armor & Wooden Tools"
 }

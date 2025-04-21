@@ -1,0 +1,55 @@
+{
+  "minecraft:attribute_modifiers": [],
+  "minecraft:enchantments": {},
+  "minecraft:item_model": "prospective:weak_upgrade",
+  "minecraft:custom_data": {
+    "actual_id": "weak_upgrade"
+  },
+  "minecraft:item_name": {
+    "translate": "item.prospective.weak_upgrade_smithing_template.new"
+  },
+  "!minecraft:jukebox_playable": {},
+  "minecraft:lore": [
+    {
+      "translate": "item.minecraft.smithing_template",
+      "color": "gray",
+      "italic": false
+    },
+    {
+      "text": ""
+    },
+    {
+      "translate": "item.minecraft.smithing_template.applies_to",
+      "color": "gray",
+      "italic": false
+    },
+    [
+      {
+        "text": " "
+      },
+      {
+        "translate": "item.prospective.smithing_template.weak_upgrade.applies_to",
+        "color": "blue",
+        "italic": false
+      }
+    ],
+    {
+      "translate": "item.minecraft.smithing_template.ingredients",
+      "color": "gray",
+      "italic": false
+    },
+    [
+      {
+        "text": " "
+      },
+      {
+        "translate": "item.prospective.smithing_template.weak_upgrade.ingredients",
+        "color": "blue",
+        "italic": false
+      }
+    ]
+  ],
+  "minecraft:max_stack_size": 64,
+  "minecraft:rarity": "common",
+  "minecraft:repair_cost": 0
+}
