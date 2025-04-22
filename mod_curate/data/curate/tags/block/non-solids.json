@@ -68,6 +68,11 @@
     "minecraft:short_dry_grass",
     "minecraft:tall_dry_grass",
     "#replaceable",
-    "sugar_cane"
+    "sugar_cane",
+    "minecraft:brown_mushroom",
+    "red_mushroom",
+    "nether_wart",
+    "warped_fungus",
+    "crimson_fungus"
   ]
 }
