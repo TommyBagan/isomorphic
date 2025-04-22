@@ -1,0 +1,28 @@
+{
+  "condition": "entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "head": {
+        "items": [
+          "chainmail_helmet"
+        ]
+      },
+      "chest": {
+        "items": [
+          "chainmail_chestplate"
+        ]
+      },
+      "legs": {
+        "items": [
+          "chainmail_leggings"
+        ]
+      },
+      "feet": {
+        "items": [
+          "chainmail_boots"
+        ]
+      }
+    }
+  }
+}

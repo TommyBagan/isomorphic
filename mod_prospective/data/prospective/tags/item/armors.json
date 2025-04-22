@@ -20,6 +20,10 @@
     "leather_boots",
     "leather_chestplate",
     "leather_leggings",
-    "leather_helmet"
+    "leather_helmet",
+    "chainmail_boots",
+    "chainmail_chestplate",
+    "chainmail_leggings",
+    "chainmail_helmet"
   ]
 }

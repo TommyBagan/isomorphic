@@ -11,7 +11,7 @@ execute as @s if predicate prospective:has_full_golden run function prospective:
 execute as @s if predicate prospective:has_full_diamond run function prospective:mechanics/unity_type/diamond_unity
 execute as @s if predicate prospective:has_full_netherite run function prospective:mechanics/unity_type/netherite_unity
 execute as @s if predicate prospective:has_full_leather run function prospective:mechanics/unity_type/leather_unity
-
+execute as @s if predicate prospective:has_full_chainmail run function prospective:mechanics/unity_type/chainmail_unity
 
 # Output the action bar messages only when needed to.
 execute as @s if score @s prospective_unity matches 1.. run execute if score @s prospective_unity_temp matches 0 run title @s actionbar {"translate":"actionbar.prospective.unity.lose"}
