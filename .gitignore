@@ -2,3 +2,16 @@ build/*
 server/
 !build/.gitkeep
 *.jar
+logs/
+libraries/
+.fabric/
+mods/
+versions/
+eula.txt
+server.properties
+world/
+crash-reports/
+usercache.json
+whitelist.json
+ops.json
+banned-*.json
