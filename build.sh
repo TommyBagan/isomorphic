@@ -278,6 +278,55 @@ combine() {
   popd
 }
 
+resc_combine() {
+  if [[ $# -le 2 ]]; then
+    echo "ERROR: Incorrect arguments specified for group_combine."
+    exit 255
+  fi
+
+  target=$1
+  output=$2
+  shift 2
+
+  # Ensure pack target builds are clean.
+  pushd "$OUT_DIR"
+  if [[ -f "$OUT_DIR/$output" ]]; then
+    rm "$OUT_DIR/$output"
+  fi
+  mkdir --parents "$OUT_DIR/$target/assets"
+
+  # Loops through each pack, overlaying on top of target. 
+  for pack in "$@"
+  do
+    if [[ -d "$OUT_DIR/$pack/assets" ]]; then
+      cp -rf $OUT_DIR/$pack/assets/* $OUT_DIR/$target/assets/
+    else
+      echo "ERROR: Resource pack doesn't exist at $OUT_DIR/$pack/assets."
+      popd
+      exit 255
+    fi
+  done
+
+  pushd "$OUT_DIR/$target"
+  # Simply zip up the target folder.
+  zip -r $output *
+  if [[ $? -ne 0 ]]; then
+    echo "Attempting with tar.exe..."
+    tar.exe -acf $output *
+    if [[ $? -ne 0 ]] || [[ ! -f "./$output" ]]; then
+      echo "ERROR: Failed to combine the resource pack for $output."
+      echo
+      popd
+      popd
+      exit 2
+    fi
+  fi 
+  mv "./$output" "$OUT_DIR/$output"
+
+  popd
+  popd
+}
+
 if [[ $# -gt 2 ]]; then
   echo "ERROR: Unexpected number of arguments."
   echo
@@ -428,6 +477,12 @@ generate_recipe_advancement mod_floristic tulip_bouquet floristic tools red_tuli
 substitute_refs mod_floristic components_tulip_bouquet
 
 check_output mod_floristic
+
+copy_target iso_resc
+check_output iso_resc
+# This must be in order of precedence.
+resc_combine iso_resc IsomorphicResourcePack$release.zip core mod_curate mod_floristic mod_prospective
+
 
 combine core IsomorphicCore$release.zip
 combine ext_dha IsomorphicExtDHA$release.zip
