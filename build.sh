@@ -395,6 +395,9 @@ copy_target mod_prospective
 generate_give_item_logic mod_prospective music_disc_13 prospective weak_upgrade
 generate_recipe_advancement mod_prospective weak_upgrade prospective misc deepslate resin_clump
 substitute_refs mod_prospective components_weak_upgrade
+## Handle Netherite Ingot changes
+generate_recipe_advancement mod_prospective netherite_ingot_from_blasting_scrap prospective misc netherite_scrap ancient_debris
+generate_recipe_advancement mod_prospective netherite_ingot_from_smelting_scrap prospective misc netherite_scrap ancient_debris
 check_output mod_prospective
 
 # Floristic
