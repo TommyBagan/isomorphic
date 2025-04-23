@@ -1,0 +1,14 @@
+{
+  "minecraft:attribute_modifiers": [
+    {
+      "type": "max_health",
+      "slot": "legs",
+      "id": "prospective:legs",
+      "operation": "add_value",
+      "amount": 4
+    }
+  ],
+  "minecraft:custom_data": {
+    "actual_id": "chainmail_leggings"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "smithing_transform",
+  "base": "leather_boots",
+  "template": "music_disc_13",
+  "addition": "iron_block",
+  "result": {
+    "id": "iron_boots",
+    "components": @components_iron_boots
+  }
+}

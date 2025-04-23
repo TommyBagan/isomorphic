@@ -1,0 +1,13 @@
+{
+  "function": "sequence",
+  "functions": [
+    {
+      "function": "set_item",
+      "item": "leather_chestplate"
+    },
+    {
+      "function": "set_components",
+      "components": @components_leather_chestplate
+    }
+  ]
+}

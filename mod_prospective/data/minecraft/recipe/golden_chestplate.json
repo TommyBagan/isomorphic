@@ -1,0 +1,10 @@
+{
+  "type": "smithing_transform",
+  "base": "leather_chestplate",
+  "template": "music_disc_13",
+  "addition": "gold_block",
+  "result": {
+    "id": "golden_chestplate",
+    "components": @components_golden_chestplate
+  }
+}

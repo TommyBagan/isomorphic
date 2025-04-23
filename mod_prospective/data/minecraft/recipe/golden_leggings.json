@@ -1,0 +1,10 @@
+{
+  "type": "smithing_transform",
+  "base": "leather_leggings",
+  "template": "music_disc_13",
+  "addition": "gold_block",
+  "result": {
+    "id": "golden_leggings",
+    "components": @components_golden_leggings
+  }
+}

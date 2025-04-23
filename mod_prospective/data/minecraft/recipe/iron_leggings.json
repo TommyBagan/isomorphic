@@ -1,0 +1,10 @@
+{
+  "type": "smithing_transform",
+  "base": "leather_leggings",
+  "template": "music_disc_13",
+  "addition": "iron_block",
+  "result": {
+    "id": "iron_leggings",
+    "components": @components_iron_leggings
+  }
+}

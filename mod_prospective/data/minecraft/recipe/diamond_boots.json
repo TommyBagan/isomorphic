@@ -1,0 +1,10 @@
+{
+  "type": "smithing_transform",
+  "base": "leather_boots",
+  "template": "music_disc_13",
+  "addition": "diamond_block",
+  "result": {
+    "id": "diamond_boots",
+    "components": @components_diamond_boots
+  }
+}
