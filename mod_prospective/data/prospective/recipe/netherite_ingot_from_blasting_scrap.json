@@ -1,0 +1,11 @@
+{
+  "type": "blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 2,
+  "group": "netherite_ingot",
+  "ingredient": "netherite_scrap",
+  "result": {
+    "id": "netherite_ingot"
+  }
+}

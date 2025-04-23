@@ -7,6 +7,10 @@
     "block": [
       {
         "path": "recipe/repair_item"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/netherite_ingot.json"
       }
     ]
   }
