@@ -1,0 +1,27 @@
+{
+  "criteria": {
+    "inventory_changed": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#prospective:equipment"
+          }
+        ],
+        "player": {
+          "type_specific": {
+            "type": "player",
+            "gamemode": [
+              "survival",
+              "adventure"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "prospective:mechanics/enforce_balance"
+  },
+  "sends_telemetry_event": false
+}

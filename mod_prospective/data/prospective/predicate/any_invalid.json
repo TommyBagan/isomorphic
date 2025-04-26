@@ -1,0 +1,68 @@
+{
+  "condition": "inverted",
+  "term": {
+    "condition": "all_of",
+    "terms": [
+      {
+        "condition": "reference",
+        "name": "prospective:valids/has_valid_boots"
+      },
+      {
+        "condition": "reference",
+        "name": "prospective:valids/has_valid_leggings"
+      },
+      {
+        "condition": "reference",
+        "name": "prospective:valids/has_valid_chestplate"
+      },
+      {
+        "condition": "reference",
+        "name": "prospective:valids/has_valid_helmet"
+      },
+      {
+        "condition": "reference",
+        "name": "prospective:valids/has_valid_mainhand"
+      },
+      {
+        "condition": "reference",
+        "name": "prospective:valids/has_valid_offhand"
+      },
+      {
+        "condition": "reference",
+        "name": "prospective:valids/has_valid_slot0"
+      },
+      {
+        "condition": "reference",
+        "name": "prospective:valids/has_valid_slot1"
+      },
+      {
+        "condition": "reference",
+        "name": "prospective:valids/has_valid_slot2"
+      },
+      {
+        "condition": "reference",
+        "name": "prospective:valids/has_valid_slot3"
+      },
+      {
+        "condition": "reference",
+        "name": "prospective:valids/has_valid_slot4"
+      },
+      {
+        "condition": "reference",
+        "name": "prospective:valids/has_valid_slot5"
+      },
+      {
+        "condition": "reference",
+        "name": "prospective:valids/has_valid_slot6"
+      },
+      {
+        "condition": "reference",
+        "name": "prospective:valids/has_valid_slot7"
+      },
+      {
+        "condition": "reference",
+        "name": "prospective:valids/has_valid_slot8"
+      }
+    ]
+  }
+}

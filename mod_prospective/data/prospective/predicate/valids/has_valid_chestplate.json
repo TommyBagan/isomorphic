@@ -1,0 +1,32 @@
+{
+  "condition": "any_of",
+  "terms": [
+    {
+      "condition": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "chest": {
+            "components": {
+              "custom_data": {
+                "actual_id": {}
+              }
+            },
+            "items": "#prospective:equipment"
+          }
+        }
+      }
+    },
+    {
+      "condition": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "chest": {
+            "items": "air"
+          }
+        }
+      }
+    }
+  ]
+}
