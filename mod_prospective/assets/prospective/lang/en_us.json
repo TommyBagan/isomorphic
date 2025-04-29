@@ -29,5 +29,8 @@
   "item.minecraft.ward_armor_trim_smithing_template": "Smithing Tablet",
   "item.minecraft.wayfinder_armor_trim_smithing_template": "Smithing Tablet",
   "item.minecraft.wild_armor_trim_smithing_template": "Smithing Tablet",
-  "item.minecraft.netherite_upgrade_smithing_template.new": "Strong Upgrade"
+  "item.minecraft.netherite_upgrade_smithing_template.new": "Strong Upgrade",
+  "attribute.name.entity_interaction_range": "Attack Range",
+  "attribute.name.generic.entity_interaction_range": "Attack Range",
+  "attribute.name.player.entity_interaction_range": "Attack Range"
 }
