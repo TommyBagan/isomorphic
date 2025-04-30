@@ -22,7 +22,7 @@
                     "functions": [
                       {
                         "function": "reference",
-                        "name": "prospective:chainmail_helmet"
+                        "name": "minecraft:chainmail_helmet"
                       },
                       {
                         "components": {
@@ -62,7 +62,7 @@
                     "functions": [
                       {
                         "function": "reference",
-                        "name": "prospective:chainmail_chestplate"
+                        "name": "minecraft:chainmail_chestplate"
                       },
                       {
                         "components": {
@@ -110,7 +110,7 @@
                     "functions": [
                       {
                         "function": "reference",
-                        "name": "prospective:iron_helmet"
+                        "name": "minecraft:iron_helmet"
                       },
                       {
                         "components": {
@@ -150,7 +150,7 @@
                     "functions": [
                       {
                         "function": "reference",
-                        "name": "prospective:iron_chestplate"
+                        "name": "minecraft:iron_chestplate"
                       },
                       {
                         "components": {
@@ -198,7 +198,7 @@
                     "functions": [
                       {
                         "function": "reference",
-                        "name": "prospective:diamond_helmet"
+                        "name": "minecraft:diamond_helmet"
                       },
                       {
                         "components": {
@@ -238,7 +238,7 @@
                     "functions": [
                       {
                         "function": "reference",
-                        "name": "prospective:diamond_chestplate"
+                        "name": "minecraft:diamond_chestplate"
                       },
                       {
                         "components": {

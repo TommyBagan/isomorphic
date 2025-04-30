@@ -264,7 +264,7 @@
           "functions": [
             {
               "function": "reference",
-              "name": "prospective:leather_helmet"
+              "name": "minecraft:leather_helmet"
             },
             {
               "function": "minecraft:enchant_randomly",
@@ -279,7 +279,7 @@
           "functions": [
             {
               "function": "reference",
-              "name": "prospective:leather_chestplate"
+              "name": "minecraft:leather_chestplate"
             },
             {
               "function": "minecraft:enchant_randomly",
@@ -294,7 +294,7 @@
           "functions": [
             {
               "function": "reference",
-              "name": "prospective:leather_leggings"
+              "name": "minecraft:leather_leggings"
             },
             {
               "function": "minecraft:enchant_randomly",
@@ -309,7 +309,7 @@
           "functions": [
             {
               "function": "reference",
-              "name": "prospective:leather_boots"
+              "name": "minecraft:leather_boots"
             },
             {
               "function": "minecraft:enchant_randomly",

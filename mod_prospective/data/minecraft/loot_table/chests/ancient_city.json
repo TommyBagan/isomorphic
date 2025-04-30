@@ -155,7 +155,7 @@
           "functions": [
             {
               "function": "reference",
-              "name": "prospective:diamond_leggings"
+              "name": "minecraft:diamond_leggings"
             },
             {
               "function": "minecraft:enchant_with_levels",
@@ -282,7 +282,7 @@
           "functions": [
             {
               "function": "reference",
-              "name": "prospective:iron_leggings"
+              "name": "minecraft:iron_leggings"
             },
             {
               "function": "minecraft:enchant_with_levels",

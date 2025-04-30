@@ -14,7 +14,7 @@
           "functions": [
             {
               "function": "reference",
-              "name": "prospective:leather_boots"
+              "name": "minecraft:leather_boots"
             },
             {
               "add": false,

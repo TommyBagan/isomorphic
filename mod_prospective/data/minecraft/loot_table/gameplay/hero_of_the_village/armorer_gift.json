@@ -10,7 +10,7 @@
           "functions": [
             {
               "function": "reference",
-              "name": "prospective:chainmail_helmet"
+              "name": "minecraft:chainmail_helmet"
             }
           ]
         },
@@ -20,7 +20,7 @@
           "functions": [
             {
               "function": "reference",
-              "name": "prospective:chainmail_chestplate"
+              "name": "minecraft:chainmail_chestplate"
             }
           ]
         },
@@ -30,7 +30,7 @@
           "functions": [
             {
               "function": "reference",
-              "name": "prospective:chainmail_leggings"
+              "name": "minecraft:chainmail_leggings"
             }
           ]
         },
@@ -40,7 +40,7 @@
           "functions": [
             {
               "function": "reference",
-              "name": "prospective:chainmail_boots"
+              "name": "minecraft:chainmail_boots"
             }
           ]
         }

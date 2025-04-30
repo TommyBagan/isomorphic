@@ -56,7 +56,7 @@
           "functions": [
             {
               "function": "reference",
-              "name": "prospective:diamond_chestplate"
+              "name": "minecraft:diamond_chestplate"
             },
             {
               "function": "minecraft:enchant_with_levels",

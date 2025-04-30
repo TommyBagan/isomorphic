@@ -20,7 +20,7 @@
           "functions": [
             {
               "function": "reference",
-              "name": "prospective:iron_boots"
+              "name": "minecraft:iron_boots"
             },
             {
               "function": "minecraft:enchant_randomly",

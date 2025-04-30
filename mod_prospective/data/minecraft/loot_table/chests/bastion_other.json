@@ -212,7 +212,7 @@
             },
             {
               "function": "reference",
-              "name": "prospective:golden_boots" 
+              "name": "minecraft:golden_boots" 
             },
             {
               "function": "minecraft:enchant_randomly",
@@ -312,7 +312,7 @@
             },
             {
               "function": "reference",
-              "name": "prospective:golden_chestplate"
+              "name": "minecraft:golden_chestplate"
             }
           ],
           "name": "minecraft:golden_chestplate"
@@ -327,7 +327,7 @@
             },
             {
               "function": "reference",
-              "name": "prospective:golden_helmet"
+              "name": "minecraft:golden_helmet"
             }
           ],
           "name": "minecraft:golden_helmet"
@@ -342,7 +342,7 @@
             },
             {
               "function": "reference",
-              "name": "prospective:golden_leggings"
+              "name": "minecraft:golden_leggings"
             }
           ],
           "name": "minecraft:golden_leggings"
@@ -357,7 +357,7 @@
             },
             {
               "function": "reference",
-              "name": "prospective:golden_boots"
+              "name": "minecraft:golden_boots"
             }
           ],
           "name": "minecraft:golden_boots"

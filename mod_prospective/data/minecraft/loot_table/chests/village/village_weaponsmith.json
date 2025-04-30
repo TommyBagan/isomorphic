@@ -101,7 +101,7 @@
           "functions": [
             {
               "function": "reference",
-              "name": "prospective:iron_chestplate"
+              "name": "minecraft:iron_chestplate"
             }
           ]
         },
@@ -112,7 +112,7 @@
           "functions": [
             {
               "function": "reference",
-              "name": "prospective:iron_helmet"
+              "name": "minecraft:iron_helmet"
             }
           ]
         },
@@ -123,7 +123,7 @@
           "functions": [
             {
               "function": "reference",
-              "name": "prospective:iron_leggings"
+              "name": "minecraft:iron_leggings"
             }
           ]
         },
@@ -134,7 +134,7 @@
           "functions": [
             {
               "function": "reference",
-              "name": "prospective:iron_boots"
+              "name": "minecraft:iron_boots"
             }
           ]
         },

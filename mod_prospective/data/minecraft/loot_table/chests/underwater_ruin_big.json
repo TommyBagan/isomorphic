@@ -87,7 +87,7 @@
           "functions": [
             {
               "function": "reference",
-              "name": "prospective:leather_chestplate"
+              "name": "minecraft:leather_chestplate"
             }
           ]
         },
@@ -97,7 +97,7 @@
           "functions": [
             {
               "function": "reference",
-              "name": "prospective:golden_helmet"
+              "name": "minecraft:golden_helmet"
             }
           ]
         },

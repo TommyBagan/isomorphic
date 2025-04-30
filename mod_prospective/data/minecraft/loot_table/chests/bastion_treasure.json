@@ -77,7 +77,7 @@
           "functions": [
             {
               "function": "reference",
-              "name": "prospective:diamond_chestplate"
+              "name": "minecraft:diamond_chestplate"
             },
             {
               "add": false,
@@ -101,7 +101,7 @@
           "functions": [
             {
               "function": "reference",
-              "name": "prospective:diamond_helmet"
+              "name": "minecraft:diamond_helmet"
             },
             {
               "add": false,
@@ -125,7 +125,7 @@
           "functions": [
             {
               "function": "reference",
-              "name": "prospective:diamond_leggings"
+              "name": "minecraft:diamond_leggings"
             },
             {
               "add": false,
@@ -149,7 +149,7 @@
           "functions": [
             {
               "function": "reference",
-              "name": "prospective:diamond_boots"
+              "name": "minecraft:diamond_boots"
             },
             {
               "add": false,
@@ -180,7 +180,7 @@
           "functions": [
             {
               "function": "reference",
-              "name": "prospective:diamond_chestplate"
+              "name": "minecraft:diamond_chestplate"
             }
           ]
         },
@@ -191,7 +191,7 @@
           "functions": [
             {
               "function": "reference",
-              "name": "prospective:diamond_helmet"
+              "name": "minecraft:diamond_helmet"
             }
           ]
         },
@@ -202,7 +202,7 @@
           "functions": [
             {
               "function": "reference",
-              "name": "prospective:diamond_boots"
+              "name": "minecraft:diamond_boots"
             }
           ]
         },
@@ -213,7 +213,7 @@
           "functions": [
             {
               "function":"reference",
-              "name": "prospective:diamond_leggings"
+              "name": "minecraft:diamond_leggings"
             }
           ]
         },
