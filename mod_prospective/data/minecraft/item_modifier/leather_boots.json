@@ -1,4 +1,13 @@
 {
-  "function": "reference",
-  "name": "prospective:leather_boots"
+  "function": "sequence",
+  "functions": [
+    {
+      "function": "set_item",
+      "item": "leather_boots"
+    },
+    {
+      "function": "set_components",
+      "components": @components_leather_boots
+    }
+  ]
 }

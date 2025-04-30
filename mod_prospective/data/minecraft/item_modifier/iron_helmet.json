@@ -1,4 +1,13 @@
 {
-  "function": "reference",
-  "name": "prospective:iron_helmet"
+  "function": "sequence",
+  "functions": [
+    {
+      "function": "set_item",
+      "item": "iron_helmet"
+    },
+    {
+      "function": "set_components",
+      "components": @components_iron_helmet
+    }
+  ]
 }

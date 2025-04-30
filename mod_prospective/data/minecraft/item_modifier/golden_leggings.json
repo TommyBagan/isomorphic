@@ -1,4 +1,13 @@
 {
-  "function": "reference",
-  "name": "prospective:golden_leggings"
+  "function": "sequence",
+  "functions": [
+    {
+      "function": "set_item",
+      "item": "golden_leggings"
+    },
+    {
+      "function": "set_components",
+      "components": @components_golden_leggings
+    }
+  ]
 }

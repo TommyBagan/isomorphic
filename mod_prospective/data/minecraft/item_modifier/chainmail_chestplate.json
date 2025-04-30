@@ -1,4 +1,13 @@
 {
-  "function": "reference",
-  "name": "prospective:chainmail_chestplate"
+  "function": "sequence",
+  "functions": [
+    {
+      "function": "set_item",
+      "item": "chainmail_chestplate"
+    },
+    {
+      "function": "set_components",
+      "components": @components_chainmail_chestplate
+    }
+  ]
 }

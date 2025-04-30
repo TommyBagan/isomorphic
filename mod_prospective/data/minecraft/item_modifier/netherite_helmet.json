@@ -1,4 +1,13 @@
 {
-  "function": "reference",
-  "name": "prospective:netherite_helmet"
+  "function": "sequence",
+  "functions": [
+    {
+      "function": "set_item",
+      "item": "netherite_helmet"
+    },
+    {
+      "function": "set_components",
+      "components": @components_netherite_helmet
+    }
+  ]
 }

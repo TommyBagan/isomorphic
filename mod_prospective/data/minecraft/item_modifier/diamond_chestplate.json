@@ -1,4 +1,13 @@
 {
-  "function": "reference",
-  "name": "prospective:diamond_chestplate"
+  "function": "sequence",
+  "functions": [
+    {
+      "function": "set_item",
+      "item": "diamond_chestplate"
+    },
+    {
+      "function": "set_components",
+      "components": @components_diamond_chestplate
+    }
+  ]
 }

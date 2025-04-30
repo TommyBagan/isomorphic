@@ -1,4 +1,13 @@
 {
-  "function": "reference",
-  "name": "prospective:diamond_helmet"
+  "function": "sequence",
+  "functions": [
+    {
+      "function": "set_item",
+      "item": "diamond_helmet"
+    },
+    {
+      "function": "set_components",
+      "components": @components_diamond_helmet
+    }
+  ]
 }

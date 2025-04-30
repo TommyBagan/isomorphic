@@ -1,4 +1,13 @@
 {
-  "function": "reference",
-  "name": "prospective:iron_boots"
+  "function": "sequence",
+  "functions": [
+    {
+      "function": "set_item",
+      "item": "iron_boots"
+    },
+    {
+      "function": "set_components",
+      "components": @components_iron_boots
+    }
+  ]
 }

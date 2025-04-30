@@ -1,4 +1,13 @@
 {
-  "function": "reference",
-  "name": "prospective:netherite_chestplate"
+  "function": "sequence",
+  "functions": [
+    {
+      "function": "set_item",
+      "item": "netherite_chestplate"
+    },
+    {
+      "function": "set_components",
+      "components": @components_netherite_chestplate
+    }
+  ]
 }
