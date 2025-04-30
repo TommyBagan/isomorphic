@@ -107,8 +107,14 @@ We have manipulated all obtaining and usage of the items to act the exact same a
 
 ## Attribution
 
+Proper attribution is important, hence why we demonstrate attribution under `misc/third_party`.
+
 We'd like to thank the following people for use of their works:
 
 - Thank you to "\_daggsy\_", for the textures from her resource pack [Flower Crowns](https://modrinth.com/resourcepack/flower-crowns).
 
 - Thank you to "DanieruArt", for the textures from his itch.io page [16x16 RPG Gems and Stones](https://danieruart.itch.io/16x16-rpg-gems-and-stones-icon-pack).
+
+- Thank you to "anivay", for the [EXACLIBUR_COPPER_COLLECTION.zip](https://discord.com/channels/541420469119877120/1159511733765943386/1160083296378703944) textures from the Excalibur Discord Server.
+
+- Thank you to "tc._", for the [SimplySwords_Excalibur_V0.1.zip](https://discord.com/channels/541420469119877120/1205311200221732896/1205311508159004725)
