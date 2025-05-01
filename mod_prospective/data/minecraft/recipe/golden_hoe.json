@@ -1,0 +1,10 @@
+{
+  "type": "smithing_transform",
+  "base": "wooden_hoe",
+  "template": "music_disc_13",
+  "addition": "gold_block",
+  "result": {
+    "id": "golden_hoe",
+    "components": @components_golden_hoe
+  }
+}

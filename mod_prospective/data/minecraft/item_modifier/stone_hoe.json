@@ -1,0 +1,13 @@
+{
+  "function": "sequence",
+  "functions": [
+    {
+      "function": "set_item",
+      "item": "stone_hoe"
+    },
+    {
+      "function": "set_components",
+      "components": @components_stone_hoe
+    }
+  ]
+}

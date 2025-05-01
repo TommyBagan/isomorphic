@@ -1,0 +1,10 @@
+{
+  "type": "smithing_transform",
+  "base": "wooden_pickaxe",
+  "template": "music_disc_13",
+  "addition": "iron_block",
+  "result": {
+    "id": "iron_pickaxe",
+    "components": @components_iron_pickaxe
+  }
+}

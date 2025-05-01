@@ -1,0 +1,21 @@
+{
+  "minecraft:attribute_modifiers": [
+    {
+      "type": "attack_damage",
+      "slot": "mainhand",
+      "id": "prospective:mainhand",
+      "operation": "add_value",
+      "amount": 1
+    },
+    {
+      "type": "entity_interaction_range",
+      "slot": "mainhand",
+      "id": "prospective:mainhand",
+      "operation": "add_value",
+      "amount": 1
+    }
+  ],
+  "minecraft:custom_data": {
+    "actual_id": "diamond_pickaxe"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "minecraft:attribute_modifiers": [
+    {
+      "type": "attack_damage",
+      "slot": "mainhand",
+      "id": "prospective:mainhand",
+      "operation": "add_value",
+      "amount": 22
+    },
+    {
+      "type": "attack_speed",
+      "slot": "mainhand",
+      "id": "prospective:mainhand",
+      "operation": "add_multiplied_base",
+      "amount": -0.4
+    },
+    {
+      "type": "entity_interaction_range",
+      "slot": "mainhand",
+      "id": "prospective:mainhand",
+      "operation": "add_value",
+      "amount": 1
+    }
+  ],
+  "minecraft:custom_data": {
+    "actual_id": "netherite_axe"
+  }
+}

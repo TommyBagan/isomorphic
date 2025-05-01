@@ -1,0 +1,13 @@
+{
+  "function": "sequence",
+  "functions": [
+    {
+      "function": "set_item",
+      "item": "iron_hoe"
+    },
+    {
+      "function": "set_components",
+      "components": @components_iron_hoe
+    }
+  ]
+}

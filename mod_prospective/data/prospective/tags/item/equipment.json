@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "#prospective:armors"
+    "#prospective:armors",
+    "#prospective:tools"
   ]
 }

@@ -1,0 +1,13 @@
+{
+  "function": "sequence",
+  "functions": [
+    {
+      "function": "set_item",
+      "item": "golden_shovel"
+    },
+    {
+      "function": "set_components",
+      "components": @components_golden_shovel
+    }
+  ]
+}

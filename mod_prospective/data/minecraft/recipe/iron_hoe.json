@@ -1,0 +1,10 @@
+{
+  "type": "smithing_transform",
+  "base": "wooden_hoe",
+  "template": "music_disc_13",
+  "addition": "iron_block",
+  "result": {
+    "id": "iron_hoe",
+    "components": @components_iron_hoe
+  }
+}
