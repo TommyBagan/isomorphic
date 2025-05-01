@@ -1,9 +1,10 @@
-attribute @s scale base reset
-attribute @s step_height base reset
-attribute @s jump_strength base reset
-attribute @s block_interaction_range base reset
-attribute @s entity_interaction_range base reset
-attribute @s movement_speed base reset
-attribute @s block_break_speed base reset
-attribute @s luck base reset
-attribute @s minecraft:attack_knockback base reset
+attribute @s scale modifier remove floristic:transformed
+attribute @s step_height modifier remove floristic:transformed
+attribute @s jump_strength modifier remove floristic:transformed
+attribute @s block_interaction_range modifier remove floristic:transformed
+attribute @s entity_interaction_range modifier remove floristic:transformed
+attribute @s movement_speed modifier remove floristic:transformed
+attribute @s block_break_speed modifier remove floristic:transformed
+attribute @s luck modifier remove floristic:transformed
+attribute @s minecraft:attack_knockback modifier remove floristic:transformed
+attribute @s gravity modifier remove floristic:transformed

@@ -1,9 +1,12 @@
-attribute @s scale base set 0.5
-attribute @s step_height base reset
-attribute @s jump_strength base set 0.39
-attribute @s block_interaction_range base set 4
-attribute @s entity_interaction_range base set 2.5
-attribute @s movement_speed base set 0.13
-attribute @s block_break_speed base set 1.2
-attribute @s luck base set 1
-attribute @s minecraft:attack_knockback base reset
+function floristic:mechanics/transformations/transform_human
+
+attribute @s scale modifier add floristic:transformed -0.5 add_value
+attribute @s step_height modifier add floristic:transformed 0 add_value
+attribute @s jump_strength modifier add floristic:transformed -0.03 add_value
+attribute @s block_interaction_range modifier add floristic:transformed -0.5 add_value
+attribute @s entity_interaction_range modifier add floristic:transformed -0.5 add_value
+attribute @s movement_speed modifier add floristic:transformed 0.03 add_value
+attribute @s block_break_speed modifier add floristic:transformed 0.2 add_value
+attribute @s luck modifier add floristic:transformed 1 add_value
+attribute @s attack_knockback modifier add floristic:transformed 0 add_value
+attribute @s gravity modifier add floristic:transformed -0.01 add_value
