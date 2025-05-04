@@ -1,0 +1,14 @@
+{
+  "type": "crafting_shapeless",
+  "ingredients": [
+    "book",
+    "emerald",
+    "#flowers"
+  ],
+  "category": "misc",
+  "result": {
+    "id": "music_disc_5",
+    "count": 1,
+    "components": @components_floriography
+  }
+}

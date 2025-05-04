@@ -604,6 +604,10 @@ substitute_refs mod_floristic components_wither_rose_circlet
 generate_give_item_logic mod_floristic music_disc_5 floristic tulip_bouquet
 generate_recipe_advancement mod_floristic tulip_bouquet floristic tools red_tulip orange_tulip white_tulip pink_tulip
 substitute_refs mod_floristic components_tulip_bouquet
+## Floriography
+generate_give_item_logic mod_floristic music_disc_5 floristic floriography
+generate_recipe_advancement mod_floristic floriography floristic tools emerald
+substitute_refs mod_floristic components_floriography
 
 check_output mod_floristic
 
