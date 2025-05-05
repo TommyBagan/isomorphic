@@ -24,5 +24,7 @@
   "enchantment.floristic.wilting": "Wilting",
   "enchantment.floristic.barbed": "Barbed",
   "enchantment.floristic.nettlesome": "Nettlesome",
-  "item.floristic.floriography": "Floriography"
+  "item.floristic.floriography": "Floriography",
+  "item.floristic.floriography.worship": "Flowering forever with Idris!",
+  "item.floristic.floriography.transform": "At Luna's watch, Idris cultivates me a new stem."
 }

@@ -20,7 +20,7 @@
     "consume_seconds": 3,
     "animation": "block",
     "has_consume_particles": false,
-    "sound": "minecraft:intentionally_empty"
+    "sound": "minecraft:item.book.page_turn"
   },
   "use_cooldown": {
     "seconds": 240,

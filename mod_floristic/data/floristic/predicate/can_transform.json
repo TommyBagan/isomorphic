@@ -1,0 +1,20 @@
+{
+  "condition": "all_of",
+  "terms": [
+    {
+      "condition": "time_check",
+      "value": {
+        "min": 12000,
+        "max": 22500
+      },
+      "period": 24000
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "dimension": "overworld",
+        "can_see_sky": true
+      }
+    }
+  ]
+}

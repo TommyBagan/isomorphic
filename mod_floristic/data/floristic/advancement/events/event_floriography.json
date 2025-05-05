@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "use_item": {
+      "trigger": "consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "custom_data": {
+              "actual_id": "floriography"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "floristic:mechanics/use_floriography"
+  },
+  "sends_telemetry_event": false
+}
