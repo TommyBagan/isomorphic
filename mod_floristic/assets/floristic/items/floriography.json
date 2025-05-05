@@ -1,6 +1,14 @@
 {
   "model": {
-    "type": "model",
-    "model": "floristic:item/floriography"
+    "type": "condition",
+    "on_false": {
+      "type": "model",
+      "model": "floristic:item/floriography"
+    },
+    "on_true": {
+      "type": "model",
+      "model": "floristic:item/floriography_using"
+    },
+    "property": "using_item"
   }
 }
