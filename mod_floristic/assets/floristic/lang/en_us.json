@@ -25,6 +25,18 @@
   "enchantment.floristic.barbed": "Barbed",
   "enchantment.floristic.nettlesome": "Nettlesome",
   "item.floristic.floriography": "Floriography",
+  "item.floristic.floriography.favour.a": "Idris gazes upon you with the most warmth passion.",
+  "item.floristic.floriography.favour.b": "You feel Idris feels a deep affection for you.",
+  "item.floristic.floriography.favour.c": "You feel Idris sees you as an ally.",
+  "item.floristic.floriography.favour.d": "You feel Idris views you favourably.",
+  "item.floristic.floriography.favour.e": "You feel Idris is indifferent to you.",
+  "item.floristic.floriography.favour.f": "You feel Idris views you unfavourably.",
+  "item.floristic.floriography.favour.g": "You feel Idris sees you as an enemy.",
+  "item.floristic.floriography.favour.h": "You feel Idris feels a deep disgust of you.",
+  "item.floristic.floriography.favour.i": "Idris curses your existance.",
   "item.floristic.floriography.worship": "Flowering forever with Idris!",
-  "item.floristic.floriography.transform": "At Luna's watch, Idris cultivates me a new stem."
+  "item.floristic.floriography.transform": "At Luna's watch, Idris cultivates me a new stem.",
+  "item.floristic.floriography.curse": "Idris blossom me mercy!",
+  "item.floristic.floriography.smite": "Idris shall strike mortality upon those defiant to death.",
+  "item.floristic.floriography.heal": "Irrigate the life of Idris' followers!"
 }

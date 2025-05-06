@@ -1,0 +1,9 @@
+{
+  "condition": "all_of",
+  "terms": [
+    {
+      "condition": "reference",
+      "name": "floristic:favour/is_rated_f_or_above"
+    }
+  ]
+}

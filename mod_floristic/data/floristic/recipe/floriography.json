@@ -2,8 +2,9 @@
   "type": "crafting_shapeless",
   "ingredients": [
     "book",
-    "emerald",
-    "#flowers"
+    "emerald_block",
+    "#flowers",
+    "honey_bottle"
   ],
   "category": "misc",
   "result": {

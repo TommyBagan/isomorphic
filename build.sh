@@ -606,7 +606,7 @@ generate_recipe_advancement mod_floristic tulip_bouquet floristic tools red_tuli
 substitute_refs mod_floristic components_tulip_bouquet
 ## Floriography
 generate_give_item_logic mod_floristic music_disc_5 floristic floriography
-generate_recipe_advancement mod_floristic floriography floristic tools emerald
+generate_recipe_advancement mod_floristic floriography floristic tools emerald emerald_block honey_bottle
 substitute_refs mod_floristic components_floriography
 
 check_output mod_floristic

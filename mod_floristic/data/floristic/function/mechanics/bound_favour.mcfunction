@@ -1,0 +1,2 @@
+execute if score @s floristic_idris_favour matches ..-51 run scoreboard players set @s floristic_idris_favour -50
+execute if score @s floristic_idris_favour matches 51.. run scoreboard players set @s floristic_idris_favour 50

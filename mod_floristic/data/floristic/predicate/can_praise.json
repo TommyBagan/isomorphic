@@ -1,0 +1,14 @@
+{
+  "condition": "all_of",
+  "terms": [
+    {
+      "condition": "location_check",
+      "predicate": {
+        "dimension": "overworld",
+        "biomes": [
+          "flower_forest"
+        ]
+      }
+    }
+  ]
+}
